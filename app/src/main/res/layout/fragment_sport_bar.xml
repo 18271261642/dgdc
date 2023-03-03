@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/shape_layout_white_bottom_bg"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_sport"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-15dp"
+                android:layout_marginBottom="@dimen/dp8"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/iv_date_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp20"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="@dimen/dp10"
+                    android:src="@mipmap/icon_date_left" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:minWidth="@dimen/dp100"
+                    android:text="2020-10-11"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/sp16" />
+
+                <ImageView
+                    android:id="@+id/iv_date_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10"
+                    android:paddingLeft="@dimen/dp20"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="@dimen/dp10"
+                    android:src="@mipmap/icon_date_right" />
+
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/view_bike_sport_dis_count"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp15" />
+
+            <include
+                layout="@layout/view_bike_sport_cal_time_pow"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp20" />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_sport_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp20"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/dp20" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+

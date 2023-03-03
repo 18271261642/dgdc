@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/rl_scale_report_head"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/common_item_line_color" />
+
+
+    <com.jkcq.homebike.web.LockableNestedScrollView
+        android:id="@+id/layout_pic_dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_view_color"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/tk_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.jkcq.homebike.web.LockableNestedScrollView>
+
+    <com.jkcq.homebike.web.LockableNestedScrollView
+        android:id="@+id/layout_pic_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/tk_webview_light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.jkcq.homebike.web.LockableNestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/tk_webview_def"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_share_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_color"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_weight="0.8">>
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3">
+
+        </View>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/circle_mainhtml_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="77dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circle_mainhtml_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+
+            android:padding="6dp"
+            android:text="关闭" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/load_pro"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#0000"
+        android:max="100"
+        android:progressDrawable="@drawable/progressbar_style"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/ll_history_share"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

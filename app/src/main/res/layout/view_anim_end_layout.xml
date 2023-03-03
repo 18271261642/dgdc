@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="96dp"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/icon_sport_big_stop" />
+
+    <com.jkcq.homebike.ride.view.TasksRopeCompletedView xmlns:tc="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sport_stop"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerInParent="true"
+        tc:radius="100dp"
+        tc:ringColor="@color/common_view_color"
+        tc:strokeWidth="4dp" />
+
+
+</RelativeLayout>

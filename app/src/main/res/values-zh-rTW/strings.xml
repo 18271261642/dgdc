@@ -1,0 +1,266 @@
+<resources>
+    <string name="app_name">Fitalent+</string>
+    <string name="hello_blank_fragment">HI！%1s</string>
+
+    <string name="mine">我的</string>
+    <string name="data">骑行</string>
+
+    /**运动历史记录**/
+    <string name="exercise_history_day">日</string>
+    <string name="exercise_history_week">周</string>
+    <string name="exercise_history_month">月</string>
+
+    /**登录**/
+    <string name="privacy_agreement_title">服务协议和隐私政策</string>
+    <string name="user_agreement">用户协议</string>//用户协议
+    <string name="privacy_agreement">隐私协议</string>//用户协议
+    <string name="login_tips">只支持中国大陆手机号码登录</string>
+    <string name="login_phone_ways">手机号登录</string>
+    <string name="login_email_ways">邮箱号登录</string>
+
+    <string name="get_code">获取验证码</string>//获取验证码
+    <string name="enter_tel">请输入手机号</string>//请输入手机号
+    <string name="enter_email">请输入邮箱</string>//请输入邮箱
+    <string name="enter_vertify">请输入验证码</string>//请输入验证码
+    <string name="enter_correct_vertify_notice">请输入正确的验证码</string>//请输入验证码
+    <string name="login">登录</string>//登录
+    <string name="login_out">退出登录</string>//登录
+    <string name="use_third_login">使用以下第三方授权登录</string>//使用以下第三方授权登录
+    <string name="agree_user_agreement_notice">请先同意用户协议</string>//请选择用户协议
+    <string name="enter_correct_tel_notice">电话号码格式不正确</string>//电话号码格式不正确
+    <string name="enter_correct_email_notice">邮箱格式不正确</string>//邮箱格式格式不正确
+    <string name="phone_cannot_blank">手机号不能为空</string>//确定退出登录
+    <string name="code_cannot_blank">验证码不能为空</string>
+    <string name="email_cannot_blank">邮箱不能为空</string>//确定退出登录
+    <string name="binding_tel">绑定手机号</string>//电话号码格式不正确
+    <string name="agree_user_agreement">已阅读并同意</string>//已阅读并同意
+    <string name="log_out_notice">确定退出登录？</string>
+    <string name="commit">提交</string>
+    <string name="enter_nickname">请输入昵称</string>
+    <string name="nickname">昵称</string>
+    <string name="gender">性别</string>
+    <string name="male">男</string>
+    <string name="birthday">生日</string>
+    <string name="weight">体重</string>
+    <string name="height">身高</string>
+    <string name="can_not_bank_nickname">昵称不能为空</string>
+    <string name="history_record">历史记录</string>
+    <string name="grand_total">累计数据</string>
+    <string name="friend_sport_rank">朋友运动排行</string>
+    <string name="more">更多</string>
+    <string name="my_device">我的设备</string>
+    <string name="spining">动感单车</string>
+    <string name="openBle">请打开蓝牙</string>
+    <string name="device_unbind_tips">确定要解绑设备</string>
+    <string name="device_setting_unbind">解绑</string>
+    <string name="device_unbind_success">解绑成功</string>
+    <string name="device_bike_name">动感单车</string>
+    <string name="device_unitl_milage_km">距离/(公里)</string>
+    <string name="device_unitl_milage_mile">距离/(英里)</string>
+    <string name="device_unitl_consume_kcal">消耗/(千卡)</string>
+    <string name="device_unitl_kcal">千卡</string>
+    <string name="device_unitl_cadence_rpm">踏频/rpm</string>
+    <string name="device_unitl_electric_kj">发电量/(千焦)</string>
+    <string name="device_unitl_hr_bpm">bpm</string>
+    <string name="device_hr_too_high">心率过高</string>
+    <string name="device_unitl_power_w">功率/(瓦)</string>
+    <string name="bike_type_free_bike">自由骑行</string>
+    <string name="bike_type_scen_bike">线路</string>
+    <string name="bike_resistance">阻力</string>
+    <string name="device_upgradeing">此设备正在升级中，请勿退出</string>
+    <string name="bike_type_scene_bike">实景线路列表</string>
+    <string name="bike_free_bike_title">选择场景</string>
+    <string name="bike_type_course_detail">课程详情</string>
+    <string name="bike_course_title">课程</string>
+    <string name="bike_main_title">骑行课程</string>
+    <string name="bike_type_course_title">课程列表</string>
+    <string name="bike_scene_line_download">我的下载</string>
+    <string name="hr_device_discon_tips">未连接心率设备，点击连接</string>
+
+    <string name="device_state_success">连接成功</string>
+    <string name="device_state_fail">连接失败</string>
+    <string name="device_state_connecting">连接中...</string>
+    <string name="device_unbind">单车未连接</string>
+    <string name="device_go_bind">去连接</string>
+    <string name="device_what_conn">如何连接</string>
+    <string name="device_conn_fail_reason">查看原因</string>
+    <string name="device_reconn">重新连接</string>
+    <string name="end_bike_sport">确定结束运动吗？</string>
+    <string name="dialog_con_bike_tips">蓝牙未连接到健身车，是否连接?</string>
+    <string name="app_open_blue_tips">手机蓝牙未打开，请打开蓝牙</string>
+    <string name="app_open_blue">打开</string>
+    <string name="app_loaction_server">扫描附近蓝牙设备需要开启定位服务</string>
+    <string name="app_loaction_on">开启</string>
+    <string name="device_free_bike_end">骑行结束</string>
+    <string name="sport_detail">查看详情</string>
+    <string name="sport_detail_title">运动详情</string>
+    <string name="sport_pk_rank_title">PK排名</string>
+    <string name="sport_update_fail">数据上传失败</string>
+    <string name="sport_dis_too_short_tips">骑行距离太短，将不保存记录确认结束吗？</string>
+    <string name="sport_continue">继续运动</string>
+    <string name="sport_end">结束</string>
+
+    <string name="cancle_download_tips">确认停止下载吗？</string>
+
+    <string name="back_today">回到今天</string>
+    <string name="scene_name">%1s</string>
+    <string name="scene_mode_title">%1s,全长：%2s</string>
+    <string name="course_time">时长：%1s </string>
+    <string name="course_time_title">时间</string>
+    <string name="scene_dis">全程：%1s 公里</string>
+    <string name="scene_mile">全程：%1s 英里</string>
+    <string name="scene_size">大小：%1s M</string>
+    <string name="scene_completely">已有%1s人完成骑行</string>
+    <string name="scene_no_pair_scene">当前资源无适用路线</string>
+    <string name="course_no_pair_scene">当前资源无适用课程</string>
+    <string name="scene_ranking">排行榜</string>
+    <string name="pk_ranking">排名</string>
+    <string name="go_connect_hr_device">连接设备</string>
+    <string name="user_info_titile">基本信息</string>
+    <string name="imperial_unit">英制</string>
+    <string name="metric_units">公制</string>
+    <string name="friend_enter_myprofile">简单地介绍一下自己吧</string>//请输入昵称
+    <string name="change_bg">修改背景</string>//请输入昵称
+    <string name="user_edit">编辑信息</string>//请输入昵称
+    <string name="choose_from_album">从相册上传</string>//请输入昵称
+    <string name="camera">相机</string>//请输入昵称
+    <string name="userinfo_change">您有修改的内容是否保存？</string>//请输入昵称
+    <string name="userinfo_save">保存</string>//请输入昵称
+    <string name="device_new_version_title">最新版本：</string>
+    <string name="package_size">安装包大小：</string>
+    <string name="log_update">更新日志：</string>
+    <string name="file_downlod_fail_tips">下载失败，是否继续下载？</string>
+    <string name="device_upgrade_tips">注意：\n1、固件更新预计需要5~10分钟，请耐心等待。 \n2、升级过程，不能关闭蓝牙，手机屏幕要常亮。 \n3、手环靠近手机，请勿走远，请勿退出app。\n4、升级前请确保设备电量大于40%或充电中。\n5、升级成功后，请在系统蓝牙中忽略设备。\n6、升级失败后，需要选择DFU设备名进行连接再升级。</string>
+    <string name="app_device_version">V%1$s</string>//V %1$s
+    <string name="file_download">下载</string>
+    <string name="device_upgrade_present">升级中%1$s%%</string>
+    <string name="device_upgrade_success">升级成功</string>
+    <string name="device_upgrade_success_tips">升级成功,请到【设置】->【蓝牙】忽略此设备</string>
+    <string name="device_upgrade_fail_tips">升级失败</string>
+    <string name="device_upgrade_fail">升级失败</string>
+    <string name="device_scan">点击搜索设备</string>
+    <string name="device_scan_bike">搜索单车</string>
+    <string name="cheack_update_error">检查可更新固件失败</string>
+    <string name="try_again">点击重试</string>
+    <string name="has_update">(有更新)</string>
+    <string name="device_upgrade">升级</string>
+    <string name="device_upgrade_sure">是否确认升级？</string>
+    <string name="file_downlod_success_tips">下载成功，是否立即升级？</string>
+    <string name="file_downlod_present">已下载%1$s%%</string>
+    <string name="device_new_version">已是最新版本</string>
+    <string name="setting_faceback">意见反馈</string>
+    <string name="setting_question">常见问题</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_unit">单位</string>
+    <string name="setting_about">关于我们</string>
+    <string name="setting_title">设置</string>
+    <string name="about_title">关于我们</string>
+    <string name="app_version">v%1$s</string>//v%1$s
+    <string name="user_height_inch">inch</string>
+    <string name="user_height_cm">cm</string>
+    <string name="user_weight_kg">kg</string>
+    <string name="user_weight_lb">lb</string>
+    <string name="clear_cache">确定要清除全部缓存?</string>
+    <string name="friend_option_success">操作成功！</string>//请输入昵称
+    /**单位名称**/
+    <string name="company_name">深圳桦昇智能科技有限公司</string>//深圳市小香蕉科技有限公司
+    <string name="app_co">Bonlala Technology (Shenzhen)Co.,Ltd.  \nAll Rights Reserved</string>
+    <string name="guide_conn_device_title">连接失败原因</string>
+
+    <string name="guide_conn_device_content">1. 确认单车在您附近5米内 \n2. 确保单车处于未连接状态 \n3. 检查单车是否开机 \n4. 重启手机蓝牙开关再试一次</string>
+    <string name="spore_no_data">暂无数据</string>
+    <string name="devcie_setting_play">玩转设备</string>
+    <string name="device_setting_info">设备信息</string>
+    <string name="device_sum_dis">累计骑行</string>
+    <string name="device_setting_ota">固件升级</string>
+    <string name="device_setting_title">设备管理</string>
+    <string name="device_conn_hr_devcie">连接心率设备</string>
+
+    <string name="cousre_title">课程介绍</string>
+    <string name="cousre_content">课程信息</string>
+    <string name="device_conn">连接</string>
+    <string name="pk_title">pk</string>
+    <string name="pk_create_pk_title">创建PK</string>
+    <string name="pk_pk_name_title">主题:</string>
+    <string name="pk_pk_line_title">实景线路:</string>
+    <string name="pk_pk_number_title">人数:</string>
+    <string name="pk_pk_pwd_title">密码:</string>
+    <string name="pk_hide_enter_name">请输入PK名字</string>
+    <string name="pk_hide_line_select">请选择线路</string>
+    <string name="pk_nor_pwe_title">密码可选</string>
+    <string name="pk_create">创建</string>
+    <string name="pk_prepare_star">开始PK</string>
+    <string name="pk_prepare_end">解散PK</string>
+    <string name="pk_prepare_title">PK准备中</string>
+    <string name="pk_end_pk_tips">确定要解散当前PK吗？</string>
+    <string name="pk_destory_pk_tips">PK已解散,即将返回</string>
+    <string name="pk_signout_pk_tips">确定要退出当前PK吗？</string>
+    <string name="pking_signout_pk_tips">现在退出PK，运动数据将不保存\n确定退出PK吗？</string>
+    <string name="pk_start_number_tips">至少需要2人才能开始PK</string>
+    <string name="Pk_attent_number">人数：%1s/%2s</string>
+    <string name="Pk_not_start">未开始</string>
+    <string name="Pk_started">已开始</string>
+    <string name="Pk_complety">已完成</string>
+    <string name="Pk_end">已结束</string>
+    <string name="Pk_creater">房主</string>
+    <string name="Pk_user">参与者</string>
+    <string name="Pk_prepare_title">%1s（等待中%1s/%2s）</string>
+    <string name="Pk_prepare_full">%1s(已满员)</string>
+    <string name="Pk_watting">等待中...</string>
+    <string name="Pk_unComplety">未完成</string>
+    <string name="PK_person">个人最佳记录</string>
+    <string name="Pk_world">世界最佳记录</string>
+    <string name="re_jion_pk_tips">您当前正在pk中，是否立即进入</string>
+    <string name="gift_tips">%1s 送 %2s 一个 %3s</string>
+    <string name="exceed_tips">您已被%1s超越</string>
+    <string name="you_exceed_tips">您已超越%1s</string>
+    <string name="exit_pk">%1s已退出PK</string>
+    <string name="your">你</string>
+    <string name="surpassed_my_record">您已超越您的最佳记录</string>
+    <string name="surpassed_world_record">您已超越世界最佳记录，继续保持</string>
+    <string name="connect_timeout_exit_PK">连接超时，退出PK</string>
+    <string name="connect_one_exit_PK">因其他用户均退出PK,本次PK结束</string>
+    <string name="connect_one_exit_PK_end">本次PK已结束</string>
+    <string name="data_is_processing">数据整理中，请稍候...</string>
+    <string name="data_is_waiting">请稍候...</string>
+    <string name="has_exit_pk">%1s已退出PK</string>
+
+
+    <string name="month1">一月</string>
+    <string name="month2">二月</string>
+    <string name="month3">三月</string>
+    <string name="month4">四月</string>
+    <string name="month5">五月</string>
+    <string name="month6">六月</string>
+    <string name="month7">七月</string>
+    <string name="month8">八月</string>
+    <string name="month9">九月</string>
+    <string name="month10">十月</string>
+    <string name="month11">十一月</string>
+    <string name="month12">十二月</string>
+
+    <string-array name="arr_month">
+        <item>@string/month1</item>
+        <item>@string/month2</item>
+        <item>@string/month3</item>
+        <item>@string/month4</item>
+        <item>@string/month5</item>
+        <item>@string/month6</item>
+        <item>@string/month7</item>
+        <item>@string/month8</item>
+        <item>@string/month9</item>
+        <item>@string/month10</item>
+        <item>@string/month11</item>
+        <item>@string/month12</item>
+    </string-array>
+    <string-array name="arr_week">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+</resources>

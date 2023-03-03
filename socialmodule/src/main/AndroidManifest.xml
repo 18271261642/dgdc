@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jkcq.socialmodule">
+
+    <application>
+        <activity android:name=".activity.PersonalHomepageActivity"></activity>
+        <activity android:name=".activity.FriendScanActivity" />
+        <activity android:name=".activity.FriendQRCodeActivity" />
+    </application>
+
+</manifest>

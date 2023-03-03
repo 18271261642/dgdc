@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_button_bg_white_selector"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Did you end the exercise？"
+            android:textColor="#2F2F33"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_pk_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/shape_btn_green_f7f7_radio_25_bg"
+            android:hint="@string/pk_hide_enter_pwd"
+            android:inputType="numberPassword"
+            android:lines="1"
+            android:maxLength="4"
+            android:padding="10dp"
+            android:textColorHint="#BBBBBB"
+            android:textSize="16sp"></EditText>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/cancel"
+                style="@style/button_style_common_view_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_btn_green_bbbb_radio_15_bg"
+                android:gravity="center"
+                android:minWidth="120dp"
+                android:text="@string/dialog_cancel"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sure"
+                style="@style/button_style_common_view_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_btn_green_common_view_radio_15_bg"
+                android:gravity="center"
+                android:minWidth="120dp"
+                android:text="@string/pk_join"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+include ':webSocket'
+include ':lib_http-coroutine'
+include ':socialmodule'
+include ':viewlibrary'
+include ':util'
+include ':platform'
+include ':base'
+include ':app'
+include ':ble'
+include ':ble-common'
+include ':ble-livedata'
+include ':lib_http-coroutine'
+rootProject.name = "dgdc"

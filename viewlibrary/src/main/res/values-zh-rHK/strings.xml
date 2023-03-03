@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">viewLibrary</string>
+
+    <string name="empty_view_hint">暂无数据</string>
+    <string name="error_view_hint">加载失败</string>
+    <string name="no_network_view_hint">网络异常</string>
+
+
+    <string name="pickerview_year">年</string>//年
+    <string name="pickerview_month">月</string>//月
+    <string name="pickerview_day">日</string>//日
+    <string name="pickerview_hours">时</string>//时
+    <string name="pickerview_minutes">分</string>//分
+    <string name="watch_unite_step">步</string>
+    <string name="pickerview_seconds">秒</string>//秒
+</resources>

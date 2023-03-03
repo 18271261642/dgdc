@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/shape_main_top_green_bg"
+    android:paddingLeft="@dimen/dp20"
+    android:paddingTop="13dp">
+
+    <TextView
+        android:id="@+id/tv_bike_conn_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/device_state_success"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/tv_bike_sum_dis_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bike_conn_state"
+        android:layout_marginTop="@dimen/dp10"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/device_sum_dis"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16" />
+
+    <TextView
+        android:id="@+id/tv_bike_sum_dis_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bike_sum_dis_title"
+        android:fontFamily="sans-serif-medium"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp32" />
+
+    <TextView
+        android:id="@+id/tv_bike_sum_dis_unitl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_bike_sum_dis_value"
+        android:layout_marginBottom="@dimen/dp5"
+        android:layout_toRightOf="@+id/tv_bike_sum_dis_value"
+        android:text="@string/sport_dis_unitl_km"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16" />
+
+
+</RelativeLayout>
+
+

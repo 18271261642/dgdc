@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80"
+        android:layout_marginTop="@dimen/dp17"
+        android:background="@drawable/shape_layout_white_bg"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_sport_dis" />
+
+        <ImageView
+            android:id="@+id/iv_sport_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_sport_count" />
+
+        <View
+            android:id="@+id/view_centre"
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@color/common_item_line_color" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_sport_count"
+            android:layout_toRightOf="@+id/view_centre"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/sport_count_title"
+            android:textColor="@color/common_rbtn_gray_color"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_view_sport_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_sport_count"
+            android:layout_toRightOf="@+id/view_centre"
+            android:fontFamily="sans-serif-medium"
+            android:text="0"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp24" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_sport_count"
+            android:layout_toLeftOf="@+id/view_centre"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/sport_dis_title"
+            android:textColor="@color/common_rbtn_gray_color"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_dis_unitl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_dis_value"
+            android:layout_marginBottom="3dp"
+            android:layout_toLeftOf="@+id/view_centre"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/sport_dis_unitl_km"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/tv_dis_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_sport_count"
+            android:layout_toLeftOf="@+id/tv_dis_unitl"
+            android:fontFamily="sans-serif-medium"
+            android:text="0"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp24" />
+
+    </RelativeLayout>
+
+
+

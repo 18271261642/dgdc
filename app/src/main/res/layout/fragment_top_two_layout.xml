@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_two_one"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_top_one" />
+
+                <com.jkcq.viewlibrary.CircleImageView
+
+                    android:id="@+id/iv_two_one"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="32dp"
+                    android:src="@mipmap/friend_icon_default_photo" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_two_one_nikename"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="@dimen/dp5"
+                android:ellipsize="middle"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=" "
+                android:textColor="@color/white"></TextView>
+
+            <TextView
+                android:id="@+id/tv_two_one_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="@color/common_view_color"
+                android:textSize="@dimen/sp22"></TextView>
+
+            <TextView
+
+                android:id="@+id/tv_two_one_best_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@drawable/shape_btn_great_bg"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5"
+                android:text="05'55''"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12"
+                android:visibility="invisible"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginBottom="@dimen/dp45"
+            android:background="@drawable/shape_btn_green_grey_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_win"></ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="VS"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_two_two"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_top_one"
+                    android:visibility="invisible" />
+
+                <com.jkcq.viewlibrary.CircleImageView
+                    android:id="@+id/iv_two_two"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35dp"
+                    android:src="@mipmap/friend_icon_default_photo"
+                    app:civ_border_color="#F7F7F9"
+                    app:civ_border_width="@dimen/dp5" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_two_two_nikename"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="@dimen/dp5"
+                android:ellipsize="middle"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=" "
+                android:textColor="@color/white"></TextView>
+
+            <TextView
+                android:id="@+id/tv_two_two_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="@color/common_view_color"
+                android:textSize="@dimen/sp22"></TextView>
+
+            <TextView
+
+                android:id="@+id/tv_two_two_best_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@drawable/shape_btn_great_bg"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5"
+                android:text="05'55''"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12"
+                android:visibility="invisible"></TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </View>
+</LinearLayout>

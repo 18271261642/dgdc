@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp8"
+        android:text="500"
+        android:textColor="#4DDA64"
+        android:textSize="@dimen/sp12"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="130dp">
+
+        <View
+            android:id="@+id/view_width"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp" />
+
+        <View
+            android:id="@+id/view_bg"
+            android:layout_width="11dp"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_sum_value_bar_bg" />
+
+        <View
+            android:id="@+id/view_current_bg"
+            android:layout_width="11dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_current_value_bar_bg" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp8"
+        android:text="07/26"
+        android:textColor="#6E6E77"
+        android:textSize="@dimen/sp12" />
+
+    <View
+        android:id="@+id/tv_select"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp8"
+        android:background="@drawable/shape_layout_green_bg" />
+
+</LinearLayout>
+

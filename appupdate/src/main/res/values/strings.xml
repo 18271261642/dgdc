@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">appupdate</string>
+    <string name="package_size">更新包大小: %1$s  M</string>
+    <string name="downloading">Downloading</string>
+    <string name="download_success">Download successful</string>
+    <string name="no_wify_tips"> The current network is in non-wifi mode, are you sure to download the video?</string>
+</resources>

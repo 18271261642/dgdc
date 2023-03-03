@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_layout_white_bottom_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_detail_view"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:background="@color/white">
+
+                <com.jkcq.homebike.ride.history.view.RopeBarChartView
+                    android:id="@+id/barChartView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/white" />
+
+
+                <TextView
+                    android:id="@+id/iv_no_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/icon_rope_history_def"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="@string/spore_no_data"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="18sp"
+                    android:visibility="gone"></TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-15dp"
+                android:layout_marginBottom="@dimen/dp8"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/iv_date_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp20"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="@dimen/dp10"
+                    android:src="@mipmap/icon_date_left" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:minWidth="@dimen/dp100"
+                    android:text="2020-10-11"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/sp16" />
+
+                <ImageView
+                    android:id="@+id/iv_date_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10"
+                    android:paddingLeft="@dimen/dp20"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="@dimen/dp10"
+                    android:src="@mipmap/icon_date_right" />
+
+
+            </LinearLayout>
+            <include
+                layout="@layout/view_bike_sport_history_dis_count"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp10" />
+
+            <include
+                layout="@layout/view_bike_sport_cal_time_pow"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp20" />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_sport_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp20"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/dp20" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+

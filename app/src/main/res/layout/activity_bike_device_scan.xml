@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:fitsSystemWindows="true"
+    tools:context=".ble.setting.BikeDeviceSettingActivity">
+
+    <com.jkcq.viewlibrary.TitleView
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginBottom="@dimen/dp15"
+        app:titleLeftIcon="@drawable/icon_back"
+        app:titletextvalue="@string/device_scan_bike" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bg_bike_device" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_device_setting_state"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_bike_conn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp3"
+        android:text=""
+        android:textColor="@color/common_rbtn_gray_color"
+        android:textSize="@dimen/sp12"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/view_certre"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_device_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_certre"
+        android:overScrollMode="never" />
+
+</RelativeLayout>

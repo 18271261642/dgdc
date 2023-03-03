@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="189dp"
+    android:layout_marginLeft="@dimen/dp20"
+    android:layout_marginRight="@dimen/dp20"
+    android:layout_marginBottom="@dimen/dp10"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_scene_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_pk_bike" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_sence_view"></View>
+
+    <TextView
+        android:id="@+id/tv_pk_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp17"
+        android:fontFamily="sans-serif-medium"
+        android:text="Route：xxx highway"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp24" />
+
+    <TextView
+        android:id="@+id/tv_sence_name"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_dis"
+        android:layout_marginLeft="@dimen/dp20"
+        android:text="Route：xxx highway"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/tv_dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_complety_count"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp6"
+        android:text="Mileage：30km"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/tv_complety_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_difficulty"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp6"
+        android:layout_marginBottom="@dimen/dp8"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14" />
+
+    <ImageView
+
+        android:id="@+id/iv_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp20"
+        android:src="@drawable/icon_difficulty_1" />
+
+
+    <View
+        android:id="@+id/view_right"
+        android:layout_width="@dimen/dp10"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+    </View>
+
+
+    <ImageView
+        android:id="@+id/iv_not_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_pk_state"
+        android:layout_toStartOf="@+id/iv_pk_pwd"
+        android:paddingTop="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:src="@drawable/icon_scene_not_download" />
+
+    <ImageView
+        android:id="@+id/iv_pk_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_pk_state"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_toStartOf="@+id/view_right"
+
+        android:paddingLeft="@dimen/dp10"
+        android:paddingTop="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:src="@mipmap/icon_pk_pwd" />
+
+    <TextView
+        android:id="@+id/tv_pk_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp20"
+        android:text="未开始"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14"></TextView>
+
+
+</RelativeLayout>
+

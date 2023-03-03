@@ -1,0 +1,113 @@
+<resources>
+    <!-- Base application theme. -->
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="login_item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_marginLeft">@dimen/dp30</item>
+        <item name="android:layout_marginRight">@dimen/dp30</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="login_edit_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp50</item>
+        <item name="android:layout_marginLeft">@dimen/dp15</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/common_gray_color</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColorHint">@color/common_gray_color</item>
+        <item name="android:textCursorDrawable">@drawable/cursorcolor</item>
+    </style>
+
+    <style name="commonLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_line_height</item>
+        <item name="android:layout_marginLeft">@dimen/dp30</item>
+        <item name="android:layout_marginRight">@dimen/dp30</item>
+        <item name="android:background">@color/common_item_line_color</item>
+    </style>
+
+    <style name="edit_page_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/common_text_color</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColorHint">@color/common_item_bar_line_color</item>
+    </style>
+
+    <style name="pop_anim_style_fade">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <declare-styleable name="SpeedView">
+        <attr name="maxSpeed" format="integer" />
+        <attr name="pointColor" format="color" />
+        <attr name="lineColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="bgColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ThermometerView">
+        <attr name="viewBg" format="color|reference" /> <!-- 背景颜色 -->
+        <attr name="unitTextSize" format="dimension" /> <!-- 单位文字大小 -->
+        <attr name="unitTextColor" format="color|reference" /> <!-- 单位文字颜色 -->
+        <attr name="scaleTextSize" format="dimension" /> <!-- 刻度值文字大小 -->
+        <attr name="scaleTextColor" format="color|reference" /> <!-- 刻度值文字颜色 -->
+        <attr name="maxScaleLineColor" format="color|reference" /> <!-- 长刻度颜色 -->
+        <attr name="midScaleLineColor" format="color|reference" /> <!-- 中等刻度颜色 -->
+        <attr name="minScaleLineColor" format="color|reference" /> <!-- 短刻度颜色 -->
+        <attr name="scaleLineWidth" format="float" /> <!-- 刻度线宽 -->
+        <attr name="maxLineWidth" format="float" /> <!-- 长刻度长 -->
+        <attr name="midLineWidth" format="float" /> <!-- 中等刻度长 -->
+        <attr name="minLineWidth" format="float" /> <!-- 短刻度长 -->
+        <attr name="spaceScaleWidth" format="float" /> <!-- 刻度离温度计距离、刻度离文字距离 -->
+        <attr name="thermometerBg" format="color|reference" /> <!-- 温度计颜色 -->
+        <attr name="thermometerShadowBg" format="color|reference" /> <!-- 温度计阴影颜色 -->
+        <attr name="maxThermometerRadius" format="float" /> <!-- 温度计底部半径 -->
+        <attr name="minThermometerRadius" format="float" /> <!-- 温度计顶部半径 -->
+        <attr name="maxMercuryRadius" format="float" /> <!-- 水银底部半径 -->
+        <attr name="minMercuryRadius" format="float" /> <!-- 水银顶部半径 -->
+        <attr name="leftMercuryBg" format="color|reference" /> <!-- 左边水银背景颜色 -->
+        <attr name="rightMercuryBg" format="color|reference" /> <!-- 右边水银背景颜色 -->
+        <attr name="leftMercuryColor" format="color|reference" /> <!-- 左边水银颜色 -->
+        <attr name="rightMercuryColor" format="color|reference" /> <!-- 右边水银颜色 -->
+        <attr name="maxScaleValue" format="float" /> <!-- 温度计最大值 -->
+        <attr name="minScaleValue" format="float" /> <!-- 温度计最小值 -->
+        <attr name="curScaleValue" format="float" /> <!-- 当前刻度值 -->
+    </declare-styleable>
+    <declare-styleable name="CalibrationView">
+        <!--最大进度值-->
+        <attr name="MaxProgress" format="integer" />
+        <!--默认显示值-->
+        <attr name="DefaultShow" format="integer" />
+        <!--是否显示动画-->
+        <attr name="ShowAnim" format="boolean" />
+        <!--动画时是否从0开始-->
+        <attr name="ShowFromZero" format="boolean" />
+        <!--动画的执行总时间-->
+        <attr name="AnimDuration" format="integer" />
+        <!--弧形的背景颜色-->
+        <attr name="CalibBgColor" format="color" />
+        <!--指针的颜色-->
+        <attr name="PointerColor" format="color" />
+        <!--圆形刻度点的颜色-->
+        <attr name="CalibCircleColor" format="color" />
+
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="TasksCompletedView">
+               
+        <attr name="radius" format="dimension" />
+               
+        <attr name="strokeWidth" format="dimension" />
+               
+        <attr name="circleColor" format="color" />
+               
+        <attr name="ringColor" format="color" />
+               
+        <attr name="certreIcon" format="reference" />
+               
+        <attr name="completedview_lock" format="boolean" />
+           
+    </declare-styleable>
+
+
+    <declare-styleable name="AnimSporEndView">
+
+        <attr name="AnimSporisShowProgress" format="boolean" />
+               
+        <attr name="AnimSporShowStarttext" format="reference|string" />
+               
+        <attr name="AnimSporShowEndText" format="reference|string" />
+        <attr name="AnimSporShowEndTextTip" format="reference|string" />
+               
+        <attr name="progressColor" format="color" />
+               
+           
+    </declare-styleable>
+    <declare-styleable name="NoiseboardView">
+        <attr name="noiseradius" format="dimension"/>     <!--扇形半径-->
+        <attr name="bigSliceCount" format="integer"/> <!-- 长刻度条数-->
+        <attr name="sliceCountInOneBigSlice" format="integer"/> <!-- 每两条长刻度之间分条数-->
+        <attr name="scaleColor" format="color"/> <!--刻度颜色-->
+        <attr name="noisescaleTextSize" format="dimension"/> <!--刻度字体大小-->
+        <attr name="noiseunitText" format="string"/> <!--单位-->
+        <attr name="noiseunitTextSize" format="string"/> <!--单位字体大小-->
+        <attr name="minValue" format="integer"/> <!--最小值-->
+        <attr name="maxValue" format="integer"/> <!--最大值-->
+        <attr name="ribbonWidth" format="dimension"/> <!--色带宽度-->
+    </declare-styleable>
+
+</resources>

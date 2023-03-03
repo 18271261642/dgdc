@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/iv_head_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/app_head_mengceng"></ImageView>
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp15"
+                android:src="@mipmap/icon_setting"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp20">
+
+                <com.jkcq.viewlibrary.CircleImageView
+                    android:id="@+id/circle_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/icon_default_man_photo"
+                    app:civ_border_color="#1a000000"
+                    app:civ_border_width="@dimen/dp4" />
+
+                <ImageView
+                    android:id="@+id/iv_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp20"
+                    android:src="@mipmap/icon_arrow_right_big"></ImageView>
+
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_toLeftOf="@+id/iv_enter"
+                    android:layout_toRightOf="@+id/circle_head"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:singleLine="true"
+                    android:text="健康传奇"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/sp20"></TextView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemview_history_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp17">
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp20"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/grand_total"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/sp20"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_toLeftOf="@id/iv_arrow_right"
+                android:layout_toRightOf="@+id/tv_left"
+                android:background="@null"
+                android:ellipsize="middle"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/history_record"
+                android:textColor="#6E6E77"
+                android:textSize="@dimen/sp14"></TextView>
+
+            <ImageView
+                android:id="@+id/iv_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:src="@mipmap/icon_arrow_right"></ImageView>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/layout_dis_count"
+            layout="@layout/view_bike_sport_dis_count"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp80"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20" />
+
+        <include
+            android:id="@+id/layout_sport_cal_time_pow"
+            layout="@layout/view_bike_sport_cal_time_pow"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp17" />
+
+
+        <com.jkcq.viewlibrary.BikeItemView
+
+            android:id="@+id/itemview_sport_rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/shape_layout_grey_bg"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            app:itemLeftText="@string/friend_sport_rank"
+            app:itemLeftTextSize="@dimen/sp18"
+            app:itemRightText="@string/more"
+            app:itemRightTextSize="@dimen/sp14" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:overScrollMode="never"
+            android:visibility="gone"
+            tools:listitem="@layout/item_mine_rank"></androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/my_device"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp20"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/layout_bike_device"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp80"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp17"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp80"
+            android:background="@drawable/shape_layout_white_bg">
+
+            <ImageView
+                android:id="@+id/iv_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp20"
+                android:src="@drawable/pic_bike"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_device"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_device_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/spining"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/sp16"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_device_mac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:text="UYEU979959"
+                    android:textColor="@color/common_rbtn_gray_color"
+                    android:textSize="@dimen/sp12"></TextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_layout_left_corner_mine_bg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/icon_arrow_right_white" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

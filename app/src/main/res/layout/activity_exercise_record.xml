@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.jkcq.viewlibrary.TitleView
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        app:calenderIcon="@drawable/icon_calender"
+        app:titleLeftIcon="@drawable/icon_back"
+        app:titleRightIcon="@drawable/icon_share"
+        app:titletextvalue="Exercise record" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_main"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_exercise_selector"
+                android:button="@null"
+                android:checked="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp8"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/exercise_history_day"
+                android:textColor="@drawable/radio_exercise_text_selector"
+                android:textSize="@dimen/sp16" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.2" />
+
+
+            <RadioButton
+                android:id="@+id/rbtn_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_exercise_selector"
+                android:button="@null"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp8"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/exercise_history_week"
+                android:textColor="@drawable/radio_exercise_text_selector"
+                android:textSize="@dimen/sp16" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.2" />
+
+            <RadioButton
+                android:id="@+id/rbtn_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_exercise_selector"
+                android:button="@null"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp8"
+                android:paddingBottom="@dimen/dp8"
+                android:text="@string/exercise_history_month"
+                android:textColor="@drawable/radio_exercise_text_selector"
+                android:textSize="@dimen/sp16" />
+        </RadioGroup>
+
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rg_main"
+            android:layout_alignParentBottom="true">
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

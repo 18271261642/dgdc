@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@drawable/shape_layout_white_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="35dp">
+
+    <com.jkcq.base.dialog.ProgressWheel xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:matProg_barColor="@color/common_text_color"
+        app:matProg_barWidth="2dp"
+        app:matProg_circleRadius="20dp"
+        app:matProg_progressIndeterminate="true" />
+
+    <TextView
+        android:id="@+id/tips_loading_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data_is_waiting"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/sp16" />
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:layout_marginLeft="@dimen/dp20"
+    android:layout_marginTop="@dimen/dp20"
+    android:layout_marginRight="@dimen/dp20"
+    android:background="@drawable/shape_layout_gray_bg_20"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp10"
+    android:paddingBottom="@dimen/dp10">
+
+
+    <ImageView
+        android:id="@+id/iv_sport"
+        android:layout_width="110dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg_pk_bike" />
+
+    <TextView
+        android:id="@+id/tv_sport_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_sport"
+        android:layout_marginBottom="@dimen/dp3"
+        android:layout_toRightOf="@+id/iv_sport"
+        android:text="2020-07-02 10:59:56"
+        android:textColor="@color/common_rbtn_gray_color"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/tv_sport_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sport_date"
+        android:layout_toRightOf="@+id/iv_sport"
+        android:fontFamily="sans-serif-medium"
+        android:text="线路PK，谁跑得快"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/sp16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_sport"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            android:src="@drawable/icon_histroy_time" />
+
+        <TextView
+            android:id="@+id/tv_sport_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="00:23:24"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            android:src="@drawable/icon_history_dis" />
+
+        <TextView
+            android:id="@+id/tv_sport_dis"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2.3km"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            android:src="@drawable/icon_history_cal" />
+
+        <TextView
+            android:id="@+id/tv_sport_cal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="23kcal"
+            android:textSize="@dimen/sp14" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

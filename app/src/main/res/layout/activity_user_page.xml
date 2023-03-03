@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_top"
+    android:layout_width="match_parent"
+    android:background="@color/common_bg_color"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <ImageView
+                android:id="@+id/iv_head_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@color/black_50" />
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp20"
+                android:src="@mipmap/icon_white_back"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/iv_sq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_back"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp20"
+                android:src="@drawable/icon_user_sq"></ImageView>
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_toStartOf="@+id/iv_sq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_back"
+                android:padding="@dimen/dp20"
+                android:src="@drawable/icon_user_edit"></ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="-60dp">
+
+            <com.jkcq.viewlibrary.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp80"
+                android:layout_marginLeft="@dimen/dp20"
+                android:src="@mipmap/friend_icon_default_photo"
+                android:textSize="@dimen/sp28"></com.jkcq.viewlibrary.CircleImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="17dp"
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_toRightOf="@+id/circle_head"
+            android:fontFamily="sans-serif-medium"
+            android:text="健康传奇"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp20"></TextView>
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_marginTop="@dimen/dp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_toRightOf="@+id/circle_head"
+            android:text="健康传奇"
+            android:textColor="#6E6E77"
+            android:textSize="@dimen/sp14"></TextView>
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp20"
+            android:layout_height="wrap_content"
+            android:text="@string/grand_total"></TextView>
+
+        <include
+            layout="@layout/view_bike_sport_dis_count"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp80"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20" />
+
+        <include
+            layout="@layout/view_bike_sport_cal_time_pow"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp17" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

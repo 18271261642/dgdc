@@ -1,0 +1,48 @@
+<resources>
+    <string name="module_name">base</string>
+    <string name="no_required_permission">Permission denied.</string>
+    <string name="scanner_action_cancel">Cancel</string>
+    <string name="scanner_action_scan">Scan</string>
+    <string name="scanner_permission_rationale">Since Android 6.0 Marshmallow system requires granting access to device\'s location in order to scan for Bluetooth LE devices. Bluetooth beacons may be used to determine the phone\'s and user\'s location.</string>
+    <string name="scanner_title">Select device:</string>
+    <string name="scanner_empty">No device found</string>
+    <string name="scanner_subtitle_bonded">BONDED DEVICES:</string>
+    <string name="scanner_subtitle_not_bonded">AVAILABLE DEVICES:</string>
+    <string name="not_available">n/a</string>
+    <string name="not_available_value">" - "</string>
+
+    <string name="gender_male">男</string>//男
+    <string name="gender_female">女</string>//女
+    <string name="user_introduction">简介 </string>//女
+
+
+    <string name="friend">好友</string>
+    <string name="attention">关注</string>
+    <string name="fans_club">粉丝</string>
+    <string name="feed">动态</string>
+
+    <string name="ride_week_sum_title">本周累计</string>
+    <string name="sport_time_title">时长</string>
+    <string name="sport_diffcu_title">难度</string>
+    <string name="sport_time_unitl"> </string>
+    <string name="sport_cal_title">消耗</string>
+    <string name="sport_cal_unitl">千卡</string>
+    <string name="sport_times_unitl">次</string>
+    <string name="sport_hw_title">发电量</string>
+    <string name="sport_hw_unitl">千焦</string>
+    <string name="started_riding">开始骑行</string>
+    <string name="sport_dis_title">里程数</string>
+    <string name="sport_dis_unitl_km">公里</string>
+    <string name="sport_dis_unitl_mile">英里</string>
+    <string name="setting_dis_unitl_km">公制单位</string>
+    <string name="setting_dis_unitl_mile">英制单位</string>
+    <string name="sport_count_title">次数</string>
+    <string name="sport_bike_line_title">实景路线</string>
+    <string name="sport_bike_pk_title">PK</string>
+    <string name="sport_resistance_char">阻力趋势图</string>
+    <string name="sport_scene_use">完成人数:%1s</string>
+    <string name="sport_pk_use">在线人数:%1s</string>
+    <string name="grand_total">Grand total</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_fail">保存失败</string>
+</resources>

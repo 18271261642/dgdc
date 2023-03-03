@@ -1,0 +1,48 @@
+<resources>
+    <string name="module_name">base</string>
+    <string name="no_required_permission">Permission denied.</string>
+    <string name="scanner_action_cancel">Cancel</string>
+    <string name="scanner_action_scan">Scan</string>
+    <string name="scanner_permission_rationale">Since Android 6.0 Marshmallow system requires granting access to device\'s location in order to scan for Bluetooth LE devices. Bluetooth beacons may be used to determine the phone\'s and user\'s location.</string>
+    <string name="scanner_title">Select device:</string>
+    <string name="scanner_empty">No device found</string>
+    <string name="scanner_subtitle_bonded">BONDED DEVICES:</string>
+    <string name="scanner_subtitle_not_bonded">AVAILABLE DEVICES:</string>
+    <string name="not_available">n/a</string>
+    <string name="not_available_value">" - "</string>
+
+    <string name="gender_male">Male</string>//男
+    <string name="gender_female">Female</string>//女
+    <string name="user_introduction">Personal profile </string>//女
+
+
+    <string name="friend">好友</string>
+    <string name="attention">关注</string>
+    <string name="fans_club">粉丝</string>
+    <string name="feed">动态</string>
+
+    <string name="ride_week_sum_title">Accumulated this week</string>
+    <string name="sport_time_title">Duration</string>
+    <string name="sport_diffcu_title">Difficulty</string>
+    <string name="sport_time_unitl"> </string>
+    <string name="sport_cal_title">Consumption</string>
+    <string name="sport_cal_unitl">kcal</string>
+    <string name="sport_times_unitl">Times</string>
+    <string name="sport_hw_title">Electric</string>
+    <string name="sport_hw_unitl">kj</string>
+    <string name="started_riding">Start riding</string>
+    <string name="sport_dis_title">Distance</string>
+    <string name="sport_dis_unitl_km">km</string>
+    <string name="sport_dis_unitl_mile">mile</string>
+    <string name="setting_dis_unitl_km">Metric units</string>
+    <string name="setting_dis_unitl_mile">Imperial units</string>
+    <string name="sport_count_title">Times</string>
+    <string name="sport_bike_line_title">Scenery</string>
+    <string name="sport_bike_pk_title">PK</string>
+    <string name="sport_resistance_char">Resistance trend</string>
+    <string name="sport_scene_use">Finished :%1s</string>
+    <string name="sport_pk_use">Online:%1s</string>
+    <string name="grand_total">Grand total</string>
+    <string name="save_success"> Save successful</string>
+    <string name="save_fail">Save failed</string>
+</resources>

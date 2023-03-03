@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingTop="@dimen/dp5"
+    android:paddingRight="@dimen/dp10"
+    android:paddingBottom="@dimen/dp5">
+
+    <View
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_props_bg" />
+
+
+    <com.jkcq.viewlibrary.CircleImageView
+        android:id="@+id/iv_gift"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/icon_pk_gift" />
+
+    <com.jkcq.base.view.LoadingAnimatorView
+        android:id="@+id/circe"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_centerInParent="true">
+
+    </com.jkcq.base.view.LoadingAnimatorView>
+
+
+</RelativeLayout>
+

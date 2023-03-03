@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="sub_color">#FECD00</color>
+    <!--common-->
+  <!--  <color name="common_text_color">#101D37</color>-->
+    <color name="common_text_color">#2F2F33</color>
+    <color name="common_button_bg">#1DCE74</color>
+    <color name="common_red">#F3323B</color>
+    <color name="common_gray_color">#9399A5</color>
+    <color name="common_rbtn_gray_color">#6E6E77</color>
+
+    <color name="bar_start_corlor">#50E79A</color>
+    <color name="common_view_color_alpha90">#1A1DCE74</color>
+    <color name="common_bg_color">#F7F7F9</color>
+
+    <!--指定颜色-->
+    <color name="common_item_line_color">#F0F0F9</color>
+    <color name="common_press_color">#ededed</color>
+    <color name="common_pop_bg">#EEEEEE</color>
+</resources>

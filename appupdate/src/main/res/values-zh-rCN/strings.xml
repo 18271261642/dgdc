@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">appupdate</string>
+    <string name="package_size">更新包大小: %1$s  M</string>
+    <string name="downloading">下载中</string>
+    <string name="download_success">下载成功</string>
+    <string name="no_wify_tips">当前网络为非wifi模式，确定下载该路线资源吗？</string>
+</resources>

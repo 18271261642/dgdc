@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_device_unbind"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/shape_layout_white_bg"
+    android:paddingLeft="@dimen/dp20"
+    android:paddingTop="@dimen/dp13"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/tv_unbind_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/device_unbind"
+        android:textColor="@color/common_rbtn_gray_color"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/tv_unbind_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_unbind_disconnect"
+        android:layout_marginTop="@dimen/dp10"
+        android:drawableRight="@drawable/icon_conn_fail_requst"
+        android:drawablePadding="@dimen/dp5"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/device_what_conn"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/sp16" />
+
+    <TextView
+        android:id="@+id/tv_unbind_conn"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_unbind_way"
+        android:layout_marginTop="@dimen/dp8"
+        android:background="@drawable/shape_btn_green_small_radi_8_bg"
+        android:gravity="center"
+        android:padding="@dimen/dp5"
+        android:text="@string/device_go_bind"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp12" />
+
+</RelativeLayout>

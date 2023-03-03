@@ -1,0 +1,267 @@
+<resources>
+    <string name="app_name">Fitalent+</string>
+    <string name="hello_blank_fragment">HI！%1s</string>
+
+    <string name="mine">Me</string>
+    <string name="data">Riding</string>
+
+    /**运动历史记录**/
+    <string name="exercise_history_day">Day</string>
+    <string name="exercise_history_week">Week</string>
+    <string name="exercise_history_month">Month</string>
+
+    /**登录**/
+    <string name="privacy_agreement_title">Service agreement and privacy policy</string>
+    <string name="user_agreement">User agreement</string>//用户协议
+    <string name="privacy_agreement">Privacy agreement</string>//用户协议
+    <string name="login_tips"> Only support Chinese mainland mobile phone number login</string>
+    <string name="login_phone_ways">Phone login</string>
+    <string name="login_email_ways">Email login</string>
+
+    <string name="get_code">Verification code</string>//获取验证码
+    <string name="enter_tel">Enter phone number</string>//请输入手机号
+    <string name="enter_email"> Enter email address</string>//请输入邮箱
+    <string name="enter_vertify"> Enter Verification code</string>//请输入验证码
+    <string name="enter_correct_vertify_notice">Please enter the correct verification code</string>
+    //请输入验证码
+    <string name="login">Sign in</string>//登录
+    <string name="login_out">Log out</string>//登录
+    <string name="use_third_login">Third party authorization login</string>//使用以下第三方授权登录
+    <string name="agree_user_agreement_notice"> Please agree to the user agreement</string>//请选择用户协议
+    <string name="enter_correct_tel_notice">Incorrect phone number</string>//电话号码格式不正确
+    <string name="enter_correct_email_notice">Incorrect phone number</string>//邮箱格式格式不正确
+    <string name="phone_cannot_blank">Mobile phone number cannot be empty</string>
+    <string name="code_cannot_blank">verification code cannot be empty</string>
+    <string name="email_cannot_blank">Email cannot be empty</string>//确定退出登录
+    <string name="binding_tel">Bind mobile phone number</string>//电话号码格式不正确
+    <string name="agree_user_agreement">Read and agree</string>//已阅读并同意
+    <string name="log_out_notice">Are you sure you want to log out?</string>
+    <string name="commit">Submit</string>
+    <string name="enter_nickname">Please enter a nickname</string>
+    <string name="nickname"> Nickname</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="birthday">Birthday</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="can_not_bank_nickname">Nickname cannot be empty</string>
+    <string name="history_record">History record</string>
+    <string name="grand_total">Cumulative total</string>
+    <string name="friend_sport_rank">Friends sports ranking</string>
+    <string name="more">More</string>
+    <string name="my_device">My device</string>
+    <string name="spining">Spinning</string>
+    <string name="openBle">Please turn on Bluetooth</string>
+    <string name="device_unbind_tips">Are you sure you want to unbind the device</string>
+    <string name="device_setting_unbind">Unbind</string>
+    <string name="device_unbind_success">Unbind successfully</string>
+    <string name="device_bike_name">Spinning</string>
+    <string name="device_unitl_milage_km">Distance/km</string>
+    <string name="device_unitl_milage_mile">Distance/mile</string>
+    <string name="device_unitl_consume_kcal">Consumption/kcal</string>
+    <string name="device_unitl_kcal">kcal</string>
+    <string name="device_unitl_cadence_rpm">Cadence/rpm</string>
+    <string name="device_unitl_electric_kj">Electric/kj</string>
+    <string name="device_unitl_hr_bpm">bpm</string>
+    <string name="device_hr_too_high">Heart rate warning</string>
+    <string name="device_unitl_power_w">Power/watt</string>
+    <string name="bike_type_free_bike">Freedom riding</string>
+    <string name="bike_type_scen_bike">Route riding</string>
+    <string name="bike_resistance">Resistance</string>
+    <string name="device_upgradeing">This device is being upgraded, do not exit</string>
+    <string name="bike_type_scene_bike">Route list</string>
+    <string name="bike_free_bike_title">Select scene</string>
+    <string name="bike_type_course_title">Course list</string>
+    <string name="bike_course_title">Course</string>
+    <string name="bike_main_title">Riding curriculum</string>
+    <string name="bike_type_course_detail">Course Details</string>
+    <string name="bike_scene_line_download">My download</string>
+    <string name="hr_device_discon_tips">Heart rate device is not connected, click connect</string>
+
+    <string name="device_state_success">Connection succeeded</string>
+    <string name="device_state_fail">Connection failed</string>
+    <string name="device_state_connecting">Connecting...</string>
+    <string name="device_unbind">Bicycle is not connected</string>
+    <string name="device_go_bind">Connect</string>
+    <string name="device_what_conn">How to connect</string>
+    <string name="device_conn_fail_reason">View reason</string>
+    <string name="device_reconn">Reconnect</string>
+    <string name="end_bike_sport">Are you sure to end the riding?</string>
+    <string name="dialog_con_bike_tips">Bluetooth is not connected to the exercise bike, do you want to connect?</string>
+    <string name="app_open_blue_tips">Mobile phone Bluetooth is not turned on, please  turn on Bluetooth</string>
+    <string name="app_open_blue">Open</string>
+    <string name="app_loaction_server">Location service needs to be turned on to scan nearby Bluetooth devices</string>
+    <string name="app_loaction_on">Open</string>
+    <string name="device_free_bike_end">Riding Finished</string>
+    <string name="sport_detail">View details</string>
+    <string name="sport_detail_title">Exercise details</string>
+    <string name="sport_pk_rank_title">PK ranking</string>
+    <string name="sport_update_fail">Data upload failed</string>
+    <string name="sport_dis_too_short_tips">The riding distance is too short, no record will be saved. Is the confirmation over?</string>
+    <string name="sport_continue">Continue</string>
+    <string name="sport_end">End</string>
+
+    <string name="cancle_download_tips">Are you sure to stop downloading?</string>
+
+    <string name="back_today"> Back to today</string>
+    <string name="scene_name">%1s</string>
+    <string name="scene_mode_title">%1s,Full length：%2s</string>
+    <string name="course_time">Duration：%1s </string>
+    <string name="course_time_title">Time</string>
+    <string name="scene_dis">Full length：%1s km</string>
+    <string name="scene_mile">Full length：%1s mile</string>
+    <string name="scene_size">Size：%1s M</string>
+    <string name="scene_completely">%1s people have completed the ride</string>
+    <string name="scene_no_pair_scene">No route available for current resource</string>
+    <string name="course_no_pair_scene">No course available for current resource</string>
+    <string name="scene_ranking">Leaderboard</string>
+    <string name="pk_ranking">Rank</string>
+    <string name="go_connect_hr_device">Device connection</string>
+    <string name="user_info_titile">Basic Information</string>
+    <string name="imperial_unit"> Imperial</string>
+    <string name="metric_units">Metric</string>
+    <string name="friend_enter_myprofile">Please enter your profile</string>//请输入昵称
+    <string name="change_bg">Modify background</string>//请输入昵称
+    <string name="user_edit">Edit information</string>//请输入昵称
+    <string name="choose_from_album">Upload from album</string>//请输入昵称
+    <string name="camera">Take photos</string>//请输入昵称
+    <string name="userinfo_change">Do you save the modified content?</string>//请输入昵称
+    <string name="userinfo_save">Save</string>//请输入昵称
+    <string name="device_new_version_title">Latest version：</string>
+    <string name="package_size">File size：</string>
+    <string name="log_update">Update log：</string>
+    <string name="file_downlod_fail_tips">Download failed, continue to download?</string>
+    <string name="device_upgrade_tips">注意：\n1、固件更新预计需要5~10分钟，请耐心等待。 \n2、升级过程，不能关闭蓝牙，手机屏幕要常亮。 \n3、手环靠近手机，请勿走远，请勿退出app。\n4、升级前请确保设备电量大于40%或充电中。\n5、升级成功后，请在系统蓝牙中忽略设备。\n6、升级失败后，需要选择DFU设备名进行连接再升级。</string>
+    <string name="app_device_version">V%1$s</string>//V %1$s
+    <string name="file_download">Download</string>
+    <string name="device_upgrade_present">Upgrading%1$s%%</string>
+    <string name="device_upgrade_success">Upgrade successfully</string>
+    <string name="device_upgrade_success_tips">Upgrade successfully, please go to [Settings] -> [bluetooth] and ignore this device</string>
+    <string name="device_upgrade_fail_tips">Upgrade failed</string>
+    <string name="device_upgrade_fail">Upgrade failed</string>
+    <string name="device_scan">Click search device</string>
+    <string name="device_scan_bike">Search device</string>
+    <string name="cheack_update_error">Failed to check for updatable firmware</string>
+    <string name="try_again">Retry</string>
+    <string name="has_update">(有更新)</string>
+    <string name="device_upgrade">Upgrade</string>
+    <string name="device_upgrade_sure">Are you sure you want to upgrade?</string>
+    <string name="file_downlod_success_tips">Download successful, upgrade now?</string>
+    <string name="file_downlod_present">Downloaded%1$s%%</string>
+    <string name="device_new_version">Is the latest version</string>
+    <string name="setting_faceback">Feedback</string>
+    <string name="setting_question">Q&amp;A</string>
+    <string name="setting_clear_cache">Clean cache</string>
+    <string name="setting_unit">Units</string>
+    <string name="setting_about">About us</string>
+    <string name="setting_title">Setting</string>
+    <string name="about_title">About</string>
+    <string name="app_version">v%1$s</string>//v%1$s
+    <string name="user_height_inch">inch</string>
+    <string name="user_height_cm">cm</string>
+    <string name="user_weight_kg">kg</string>
+    <string name="user_weight_lb">lb</string>
+    <string name="clear_cache">Clean the cache?</string>
+    <string name="friend_option_success">The operation was successful！</string>//请输入昵称
+    /**单位名称**/
+    <string name="company_name">深圳桦昇智能科技有限公司</string>//深圳市小香蕉科技有限公司
+    <string name="app_co">Bonlala Technology (Shenzhen)Co.,Ltd.  \nAll Rights Reserved</string>
+    <string name="guide_conn_device_title">Disconnect Reason</string>
+
+    <string name="guide_conn_device_content">1. Make sure that the bike is within 5 meters of you \n2. Make sure that the bike is not connected \n3. Check if the bike is turned on \n4. Restart the phone’s Bluetooth switch and try again</string>
+    <string name="spore_no_data">No Data</string>
+    <string name="devcie_setting_play">Manual</string>
+    <string name="device_setting_info">Device info</string>
+    <string name="device_sum_dis">Cumulative riding</string>
+    <string name="device_setting_ota">Firmware upgrade</string>
+    <string name="device_setting_title">Device management</string>
+    <string name="device_conn_hr_devcie">Connect a heart rate device</string>
+    <string name="cousre_title">Course introduction</string>
+    <string name="cousre_content">Course information</string>
+    <string name="device_conn">connection</string>
+
+    <string name="pk_title">pk</string>
+    <string name="pk_create_pk_title">Create PK</string>
+    <string name="pk_pk_name_title">Subject:</string>
+    <string name="pk_pk_line_title">Route:</string>
+    <string name="pk_pk_number_title">Number of people:</string>
+    <string name="pk_pk_pwd_title">Password:</string>
+    <string name="pk_hide_enter_name">Please input PK name</string>
+    <string name="pk_hide_line_select">Please select the route</string>
+    <string name="pk_nor_pwe_title">Password optional</string>
+    <string name="pk_create">Create</string>
+    <string name="pk_prepare_star">Start PK</string>
+    <string name="pk_prepare_end">Dissolution of PK</string>
+    <string name="pk_prepare_title">PK in preparation</string>
+    <string name="pk_end_pk_tips">Are you sure you want to dissolve the current PK?</string>
+    <string name="connect_one_exit_PK_end">The PK has ended</string>
+    <string name="pk_destory_pk_tips">PK dissolved</string>
+    <string name="pk_signout_pk_tips">Are you sure you want to exit the current PK?</string>
+    <string name="pking_signout_pk_tips">if you exit PK now, exercise data will not be saved\nAre you sure to exit PK?</string>
+    <string name="pk_start_number_tips">It takes at least 2 people to start PK</string>
+    <string name="Pk_attent_number">No.：%1s/%2s</string>
+
+    <string name="Pk_not_start">Waiting</string>
+    <string name="Pk_started">Started</string>
+    <string name="Pk_complety">Completed</string>
+    <string name="Pk_end">It is over</string>
+    <string name="Pk_creater">Creator</string>
+    <string name="Pk_user">participant</string>
+    <string name="Pk_prepare_title">%1s(waiting %1s/%2s)</string>
+    <string name="Pk_prepare_full">%1s(Fulled)</string>
+    <string name="Pk_watting">Waiting</string>
+    <string name="Pk_unComplety">Undone</string>
+    <string name="PK_person">Personal Best</string>
+    <string name="Pk_world">World\'s Best</string>
+    <string name="re_jion_pk_tips">You have an ongoing PK, do you enter immediately</string>
+    <string name="gift_tips">%1s give %2s a %3s</string>
+    <string name="exceed_tips">You have been surpassed by %1s</string>
+    <string name="you_exceed_tips">you have surpassed %1s</string>
+    <string name="exit_pk">%1s has exited PK</string>
+    <string name="your">You</string>
+    <string name="surpassed_my_record"> You have surpassed your best record</string>
+    <string name="surpassed_world_record">You have surpassed the world’s best record and continue to maintain</string>
+    <string name="connect_timeout_exit_PK">Connection timeout, exit PK</string>
+    <string name="connect_one_exit_PK">Because other users quit PK, the PK ends</string>
+    <string name="data_is_processing">Data processing, please wait...</string>
+    <string name="data_is_waiting">please wait...</string>
+    <string name="has_exit_pk">%1s has exited PK</string>
+
+    <string name="month1">January</string>
+    <string name="month2">February</string>
+    <string name="month3">March</string>
+    <string name="month4">April</string>
+    <string name="month5">May</string>
+    <string name="month6">June</string>
+    <string name="month7">July</string>
+    <string name="month8">August</string>
+    <string name="month9">September</string>
+    <string name="month10">October</string>
+    <string name="month11">November</string>
+    <string name="month12">December</string>
+
+    <string-array name="arr_month">
+        <item>@string/month1</item>
+        <item>@string/month2</item>
+        <item>@string/month3</item>
+        <item>@string/month4</item>
+        <item>@string/month5</item>
+        <item>@string/month6</item>
+        <item>@string/month7</item>
+        <item>@string/month8</item>
+        <item>@string/month9</item>
+        <item>@string/month10</item>
+        <item>@string/month11</item>
+        <item>@string/month12</item>
+    </string-array>
+    <string-array name="arr_week">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+
+</resources>

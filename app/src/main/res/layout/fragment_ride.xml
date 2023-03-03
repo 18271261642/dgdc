@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:overScrollMode="never"
+    tools:context=".ride.RideFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@color/common_bg_color"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp20"
+            android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="@string/hello_blank_fragment"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp30" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="136dp">
+
+            <include
+                android:id="@+id/layout_device_connect"
+                layout="@layout/view_bike_connect"
+                android:visibility="invisible" />
+
+            <include
+                android:id="@+id/layout_device_unbind"
+                layout="@layout/view_bike_unbind"
+                android:visibility="invisible" />
+
+            <include
+                android:id="@+id/layout_device_disconnect"
+                layout="@layout/view_bike_disconnect" />
+
+
+            <ImageView
+                android:id="@+id/iv_bike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/dp22"
+                android:src="@drawable/pic_bike" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="17dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/ride_week_sum_title"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp20" />
+
+        <include
+            android:id="@+id/layout_dis_count"
+            layout="@layout/view_bike_sport_dis_count" />
+
+        <include
+            android:id="@+id/layout_sport_cal_time_pow"
+            layout="@layout/view_bike_sport_cal_time_pow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp17"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/started_riding"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp20" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_line_bike"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_line_bike" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/shape_main_white_50_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="@dimen/dp100"
+                    android:singleLine="true"
+                    android:text="@string/sport_bike_line_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:layout_toStartOf="@+id/iv_line_go_1"
+                    android:src="@drawable/icon_line_bike_go" />
+
+                <ImageView
+                    android:id="@+id/iv_line_go_1"
+                    android:layout_width="5dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_toStartOf="@+id/iv_line_go_2"
+                    android:src="@drawable/icon_go_small_1"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_line_go_2"
+                    android:layout_width="5dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_toStartOf="@+id/iv_line_go_3"
+                    android:src="@drawable/icon_go_small_2"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_line_go_3"
+                    android:layout_width="5dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:src="@drawable/icon_go_small_3"></ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_pk_bike"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_pk_bike" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/shape_main_white_50_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="@dimen/dp100"
+                    android:singleLine="true"
+                    android:text="@string/sport_bike_pk_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:layout_toStartOf="@+id/iv_free_go_1"
+                    android:src="@drawable/icon_line_bike_go" />
+
+                <ImageView
+                    android:id="@+id/iv_free_go_1"
+                    android:layout_width="5dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_toStartOf="@+id/iv_free_go_2"
+                    android:src="@drawable/icon_go_small_1"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_free_go_2"
+                    android:layout_width="5dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_toStartOf="@+id/iv_free_go_3"
+                    android:src="@drawable/icon_go_small_2"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_free_go_3"
+                    android:layout_width="5dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:src="@drawable/icon_go_small_3"></ImageView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="@dimen/dp80"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_free_bike"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_free_bike" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/shape_main_white_50_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="@dimen/dp100"
+                    android:singleLine="true"
+                    android:text="@string/bike_type_free_bike"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/dp4"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:layout_toStartOf="@+id/iv_course_go_2"
+                    android:src="@drawable/icon_line_bike_go" />
+
+                <ImageView
+                    android:id="@+id/iv_course_go_1"
+                    android:layout_width="5dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_toStartOf="@+id/iv_course_go_2"
+                    android:src="@drawable/icon_go_small_1"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_course_go_2"
+                    android:layout_width="5dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_toStartOf="@+id/iv_course_go_3"
+                    android:src="@drawable/icon_go_small_2"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_course_go_3"
+                    android:layout_width="5dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:src="@drawable/icon_go_small_3"></ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_course_bike"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_course_bike" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/shape_main_white_50_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="@dimen/dp100"
+                    android:singleLine="true"
+                    android:text="@string/bike_main_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:layout_toStartOf="@+id/iv_pk_go_1"
+                    android:src="@drawable/icon_line_bike_go" />
+
+                <ImageView
+                    android:id="@+id/iv_pk_go_1"
+                    android:layout_width="5dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_toStartOf="@+id/iv_pk_go_2"
+                    android:src="@drawable/icon_go_small_1"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_pk_go_2"
+                    android:layout_width="5dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_toStartOf="@+id/iv_pk_go_3"
+                    android:src="@drawable/icon_go_small_2"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_pk_go_3"
+                    android:layout_width="5dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:src="@drawable/icon_go_small_3"></ImageView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

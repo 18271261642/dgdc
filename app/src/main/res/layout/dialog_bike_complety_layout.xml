@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_button_bg_white_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/sp20">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:drawableLeft="@drawable/icon_sport_complety_back"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/device_free_bike_end"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <com.jkcq.viewlibrary.ItemSportView
+                android:id="@+id/item_dis"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="1"
+                app:sport_title_color="@color/common_rbtn_gray_color"
+                app:sport_title_value="@string/sport_dis_title"
+                app:sport_type_icon="@drawable/icon_sport_complety_dis"
+                app:sport_unitl_color="@color/common_text_color"
+                app:sport_unitl_value="@string/sport_dis_unitl_km"
+                app:sport_value_color="@color/common_text_color" />
+
+
+            <com.jkcq.viewlibrary.ItemSportView
+                android:id="@+id/item_time"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_weight="1"
+                app:sport_title_color="@color/common_rbtn_gray_color"
+                app:sport_title_value="@string/sport_time_title"
+                app:sport_type_icon="@drawable/icon_sport_time"
+                app:sport_unitl_color="@color/common_text_color"
+                app:sport_unitl_value="@string/sport_time_unitl"
+                app:sport_value_color="@color/common_text_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:orientation="horizontal">
+
+
+            <com.jkcq.viewlibrary.ItemSportView
+                android:id="@+id/item_cal"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="1"
+                app:sport_title_color="@color/common_rbtn_gray_color"
+                app:sport_title_value="@string/sport_cal_title"
+                app:sport_type_icon="@drawable/icon_cal"
+                app:sport_unitl_color="@color/common_text_color"
+                app:sport_unitl_value="@string/sport_cal_unitl"
+                app:sport_value_color="@color/common_text_color" />
+
+            <LinearLayout
+                android:id="@+id/layout_detail"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp60"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_weight="1"
+                android:background="@drawable/shape_layout_gray_bg_15"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="@string/sport_detail"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/sp18" />
+
+                <ImageView
+                    android:id="@+id/iv_finish_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_sport_complety_detail"></ImageView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

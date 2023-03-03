@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PersonalHomepageActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp240">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp240"
+            android:src="@color/common_text_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp10"
+                android:paddingRight="@dimen/dp20"
+                android:paddingBottom="@dimen/dp10"
+                android:src="@mipmap/icon_white_back" />
+
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="@dimen/dp10"
+                android:paddingRight="@dimen/dp20"
+                android:paddingBottom="@dimen/dp10"
+                android:src="@mipmap/icon_white_qrcode" />
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_qrcode"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp10"
+                android:paddingRight="@dimen/dp20"
+                android:paddingBottom="@dimen/dp10"
+                android:src="@mipmap/icon_edit" />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <com.jkcq.viewlibrary.CircleImageView
+        android:id="@+id/circle_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/negative_dp60"
+        android:src="@mipmap/icon_default_man_photo" />
+
+
+    <TextView
+        android:id="@+id/itemview_history_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/sp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="@string/grand_total"
+        android:gravity="center_vertical" />
+
+    <include
+        layout="@layout/friend_view_bike_sport_dis_count"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp17"
+        android:orientation="horizontal">
+
+        <com.jkcq.viewlibrary.ItemSportView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_weight="1"
+            app:sport_title_color="@color/common_rbtn_gray_color"
+            app:sport_title_value="@string/sport_time_title"
+            app:sport_type_icon="@drawable/icon_sport_time"
+            app:sport_unitl_color="@color/common_text_color"
+            app:sport_unitl_value="@string/sport_time_unitl"
+            app:sport_value_color="@color/common_text_color" />
+
+        <com.jkcq.viewlibrary.ItemSportView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_weight="1"
+            app:sport_title_color="@color/common_rbtn_gray_color"
+            app:sport_title_value="@string/sport_cal_title"
+            app:sport_type_icon="@drawable/icon_cal"
+            app:sport_unitl_color="@color/common_text_color"
+            app:sport_unitl_value="@string/sport_cal_unitl"
+            app:sport_value_color="@color/common_text_color" />
+
+        <com.jkcq.viewlibrary.ItemSportView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_weight="1"
+            app:sport_title_color="@color/common_rbtn_gray_color"
+            app:sport_title_value="@string/sport_hw_title"
+            app:sport_type_icon="@drawable/icon_hw"
+            app:sport_unitl_color="@color/common_text_color"
+            app:sport_unitl_value="@string/sport_hw_unitl"
+            app:sport_value_color="@color/common_text_color" />
+    </LinearLayout>
+</LinearLayout>

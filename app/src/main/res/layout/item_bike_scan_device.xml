@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginLeft="@dimen/dp20"
+    android:layout_marginTop="@dimen/dp10"
+    android:layout_marginRight="@dimen/dp20"
+    android:background="@drawable/shape_layout_white_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp20"
+    android:paddingTop="@dimen/dp18"
+    android:paddingRight="@dimen/dp20"
+    android:paddingBottom="@dimen/dp18">
+
+    <TextView
+        android:id="@+id/tv_device_type_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="动感单车"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/sp16" />
+
+    <TextView
+        android:id="@+id/tv_device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-medium"
+        android:text="UYEU734736"
+        android:textColor="@color/common_rbtn_gray_color"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/tv_conn_device"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_btn_green_small_radi_8_bg"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:minWidth="@dimen/dp100"
+        android:paddingLeft="@dimen/dp8"
+        android:paddingRight="@dimen/dp8"
+        android:text="@string/device_conn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp11" />
+
+
+</RelativeLayout>
+

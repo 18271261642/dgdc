@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 日历 -->
+    <dimen name="cell_width">39dp</dimen>
+    <dimen name="cell_margin_top">0dp</dimen>
+    <dimen name="cell_margin_left">10dp</dimen>
+    <dimen name="cell_text_size">15sp</dimen>
+</resources>

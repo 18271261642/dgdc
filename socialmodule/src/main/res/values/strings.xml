@@ -1,0 +1,14 @@
+<resources>
+    <string name="friend_open_to_scan">打开Bonlala点击“我的扫一扫”，关注我吧</string>
+    <string name="friend_input_qrcode_to_frame">请将二维码放入放入框中</string>
+    <string name="friend_scan">扫一扫</string>
+    <string name="friend_open_light">打开闪光灯</string>
+    <string name="friend_close_light">关闭闪光灯</string>
+    <string name="ensure_unfollow">确认取消关注用户？</string>
+    <string name="friend_follow">关注</string>
+    <string name="friend_each_follow">互相关注</string>
+    <string name="friend_already_follow">已关注</string>
+    <string name="friend_change_photo">更换头像</string>
+    <string name="friend_to_follow">+关注</string>
+    <string name="please_open_camera_permission">请打开相机权限</string>
+</resources>

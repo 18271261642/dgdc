@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <ImageView
+                android:id="@+id/iv_head_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@color/black_50" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp20"
+                android:src="@mipmap/icon_white_back"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_back"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/user_edit"
+                android:textColor="@color/white"
+                android:textSize="18sp"></TextView>
+
+            <ImageView
+                android:id="@+id/iv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_back"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp20"
+                android:src="@drawable/icon_white_save"></ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="-60dp">
+
+            <com.jkcq.viewlibrary.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp80"
+                android:layout_marginLeft="@dimen/dp20"
+                android:src="@mipmap/friend_icon_default_photo"
+                android:textSize="@dimen/sp28"></com.jkcq.viewlibrary.CircleImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp10"
+                android:elevation="@dimen/dp5"
+                app:cardCornerRadius="@dimen/dp20"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="false">
+
+                <TextView
+                    android:id="@+id/tv_chang_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="26sp"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingRight="26sp"
+                    android:paddingBottom="@dimen/dp10"
+                    android:text="@string/change_bg"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/sp16"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="37dp"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/shape_layout_gray_bg_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp20"
+                android:text="@string/nickname"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/sp16"></TextView>
+
+            <EditText
+                android:id="@+id/et_subname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@null"
+                android:hint="@string/enter_nickname"
+                android:maxLength="20"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/sp16"></EditText>
+        </RelativeLayout>
+
+
+        <com.jkcq.viewlibrary.BikeItemUserView
+            android:id="@+id/itemview_select_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/shape_layout_gray_bg_20"
+            android:gravity="center_vertical"
+            app:itemLeftText="@string/gender"
+            app:itemLeftTextSize="@dimen/sp16"
+            app:itemRightText="@string/male" />
+
+
+        <com.jkcq.viewlibrary.BikeItemUserView
+            android:id="@+id/itemview_pk_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/shape_layout_gray_bg_20"
+            android:gravity="center_vertical"
+            app:itemLeftText="@string/height"
+            app:itemLeftTextSize="@dimen/sp16"
+            app:itemRightText="170cm" />
+
+        <com.jkcq.viewlibrary.BikeItemUserView
+            android:id="@+id/itemview_weight"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/shape_layout_gray_bg_20"
+            android:gravity="center_vertical"
+            app:itemLeftText="@string/weight"
+            app:itemLeftTextSize="@dimen/sp16"
+            app:itemRightText="60kg" />
+
+        <com.jkcq.viewlibrary.BikeItemUserView
+            android:id="@+id/itemview_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/shape_layout_gray_bg_20"
+            android:gravity="center_vertical"
+            app:itemLeftText="@string/birthday"
+            app:itemLeftTextSize="@dimen/sp16"
+            app:itemRightText="1991-01-01" />
+
+
+        <RelativeLayout
+            android:id="@+id/layout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp20"
+            android:background="@drawable/shape_layout_gray_bg_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_profile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp18"
+                android:text="@string/user_introduction"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/tv_currentcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_profile_title"
+                android:layout_toStartOf="@+id/tv_sumcount"
+                android:text="0"
+                android:textColor="#BBBBBB"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_sumcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_profile_title"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp10"
+                android:text="/200"
+                android:textColor="#BBBBBB"
+                android:textSize="@dimen/sp14" />
+
+
+            <EditText
+                android:id="@+id/et_myProfile"
+                style="@style/edit_page_style"
+                android:layout_below="@+id/tv_profile_title"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp15"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="left"
+                android:hint="@string/friend_enter_myprofile"
+                android:inputType="text"
+                android:maxLength="200"
+                android:padding="@dimen/dp10"
+                android:textColorHint="#BBBBBB" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

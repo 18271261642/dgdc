@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hint_color">#BBBBBB</color>
+    <color name="color_layout_bg_grey">#fff7f7f9</color>
+    <color name="common_blank">#000000</color>
+    <color name="common_text_color">#2F2F33</color>
+    <color name="common_tips_color">#6E6E77</color>
+    <color name="common_item_bar_line_color">#D6D6DD</color>
+
+    <color name="red_value">#c72424</color>
+    <color name="orange_value">#d38324</color>
+    <color name="yellow_value">#ddd843</color>
+    <color name="green_value">#58ce41</color>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp10"
+    android:layout_marginTop="@dimen/dp10"
+    android:layout_marginRight="@dimen/dp10"
+    android:layout_marginBottom="@dimen/dp10"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_btn_green_grey_radio_5_bg"
+        android:gravity="center"
+        android:minWidth="30dp"
+        android:padding="@dimen/dp5"
+        android:text="4"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_toRightOf="@+id/tv_ranking"
+        android:background="@drawable/shape_btn_green_grey_radio_35_bg">
+
+
+        <com.jkcq.viewlibrary.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:src="@mipmap/icon_default_man_photo">
+
+        </com.jkcq.viewlibrary.CircleImageView>
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_centre"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_toLeftOf="@+id/tv_create"
+            android:layout_toRightOf="@+id/iv_head"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="@string/nickname"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view_centre"
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:layout_centerInParent="true"></View>
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_centre"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_toLeftOf="@+id/tv_create"
+            android:layout_toRightOf="@+id/iv_head"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="Completed"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:fontFamily="sans-serif-medium"
+            android:text="23:00:00"
+            android:textColor="@color/white"></TextView>
+
+    </RelativeLayout>
+</RelativeLayout>
+

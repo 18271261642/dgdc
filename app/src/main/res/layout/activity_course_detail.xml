@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ride.sceneriding.SceneRidingListActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="80dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_bg"
+                android:layout_width="match_parent"
+                android:layout_height="189dp"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp10"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/iv_scene_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_sence_view" />
+
+                <TextView
+                    android:id="@+id/tv_course_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:layout_marginBottom="@dimen/dp15"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/cousre_title"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"></TextView>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@drawable/shape_btn_white_20_bg"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp18">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp18"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:layout_marginBottom="@dimen/dp18"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_btn_d1dc_20_bg"
+                        android:paddingLeft="@dimen/dp10">
+
+                        <ImageView
+                            android:id="@+id/iv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:src="@drawable/icon_course_time"></ImageView>
+
+                        <TextView
+                            android:id="@+id/tv_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/iv_time"
+                            android:layout_marginTop="-5dp"
+                            android:layout_toEndOf="@+id/iv_time"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/sport_time_title"
+                            android:textColor="#1DCE74"
+                            android:textSize="12sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_time_title"
+                            android:layout_toEndOf="@+id/iv_time"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="00:00"
+                            android:textColor="@color/common_text_color"
+                            android:textSize="18sp"></TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_btn_d127_20_bg"
+                        android:paddingLeft="@dimen/dp10">
+
+                        <ImageView
+                            android:id="@+id/iv_difficulty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:src="@drawable/icon_course_detail_diff"></ImageView>
+
+                        <TextView
+                            android:id="@+id/tv_difficulty_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/iv_difficulty"
+                            android:layout_marginTop="-5dp"
+                            android:layout_toEndOf="@+id/iv_difficulty"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/sport_diffcu_title"
+                            android:textColor="#127AFF"
+                            android:textSize="12sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_difficulty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_difficulty_title"
+                            android:layout_toEndOf="@+id/iv_difficulty"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="★★☆☆☆"
+                            android:textColor="@color/common_text_color"
+                            android:textSize="18sp"></TextView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.5dp"
+                        android:layout_weight="1"
+                        android:background="@color/common_text_color"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/cousre_title"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp"></TextView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.5dp"
+                        android:layout_weight="1"
+                        android:background="@color/common_text_color"></View>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:text="11111111"
+                    android:textColor="#6E6E77"
+                    android:textSize="@dimen/sp14"></TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@drawable/shape_btn_white_20_bg"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp18">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:layout_marginBottom="@dimen/dp18"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.5dp"
+                        android:layout_weight="1"
+                        android:background="@color/common_text_color"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/cousre_content"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp"></TextView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.5dp"
+                        android:layout_weight="1"
+                        android:background="@color/common_text_color"></View>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/bike_resistance"
+                    android:textColor="#1DCE74"
+                    android:textSize="10sp"></TextView>
+
+                <com.jkcq.homebike.ride.view.CourseDetailChar
+                    android:id="@+id/tv_courseDetailChar"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp">
+
+
+                </com.jkcq.homebike.ride.view.CourseDetailChar>
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-25dp"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="right"
+                    android:text="@string/course_time_title"
+                    android:textColor="#1DCE74"
+                    android:textSize="10sp"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/btn_download"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp40"
+        android:layout_marginRight="@dimen/dp40"
+        android:layout_marginBottom="@dimen/dp20"
+        android:background="@drawable/shape_btn_green_bg"
+        android:gravity="center"
+        android:text="@string/file_download"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"></TextView>
+
+</RelativeLayout>

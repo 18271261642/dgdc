@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="fb_login_protocol_scheme">fb849525262075423</string>
+
+    <string name="please_install_qq">请安装qq软件，才能进行qq登录</string>
+    <string name="please_install_wechat">请安装微信，才能进行微信登录</string>
+    <string name="login_failed">登录失败</string>
+    <string name="login_cancel">登录取消</string>
+</resources>

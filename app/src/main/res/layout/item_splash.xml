@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jkcq.homebike.ride.freeride.view.FitImageView
+        android:id="@+id/item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_line" />
+
+    <com.jkcq.homebike.ride.freeride.view.FitImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_line3" />
+
+    <com.jkcq.homebike.ride.freeride.view.FitImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_line2" />
+
+    <com.jkcq.homebike.ride.freeride.view.FitImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_line1" />
+
+
+    <!--  <ImageView
+          android:id="@+id/item_bg"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/ww2"
+          android:scaleType="centerCrop"/>-->
+
+</RelativeLayout>

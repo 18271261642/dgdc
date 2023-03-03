@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.SupplementUserInfoActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp20"
+        android:src="@mipmap/icon_black_back"></ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/user_info_titile"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/sp28"></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="37dp"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@drawable/shape_layout_grey_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="@string/nickname"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp16"></TextView>
+
+        <EditText
+            android:id="@+id/et_subname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@null"
+            android:hint="@string/enter_nickname"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/sp16"></EditText>
+    </RelativeLayout>
+
+
+    <com.jkcq.viewlibrary.BikeItemView
+        android:id="@+id/itemview_select_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@drawable/shape_layout_grey_bg"
+        android:gravity="center_vertical"
+        app:itemLeftText="@string/gender"
+        app:itemLeftTextSize="@dimen/sp16"
+        app:itemRightText="@string/male" />
+
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@drawable/shape_layout_grey_bg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_metric_units"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_weight="1"
+            android:background="@drawable/radio_user_unit_bg_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/metric_units"
+            android:textColor="@drawable/radio_user_info_text_selector"
+            android:textSize="@dimen/sp10" />
+
+        <RadioButton
+            android:id="@+id/rbtn_imperial_unit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_weight="1"
+            android:background="@drawable/radio_user_unit_bg_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/imperial_unit"
+            android:textColor="@drawable/radio_user_info_text_selector"
+            android:textSize="@dimen/sp10" />
+
+
+    </RadioGroup>
+
+    <com.jkcq.viewlibrary.BikeItemView
+        android:id="@+id/itemview_pk_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@drawable/shape_layout_grey_bg"
+        android:gravity="center_vertical"
+        app:itemLeftText="@string/height"
+        app:itemLeftTextSize="@dimen/sp16"
+        app:itemRightText="170cm" />
+
+    <com.jkcq.viewlibrary.BikeItemView
+        android:id="@+id/itemview_weight"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@drawable/shape_layout_grey_bg"
+        android:gravity="center_vertical"
+        app:itemLeftText="@string/weight"
+        app:itemLeftTextSize="@dimen/sp16"
+        app:itemRightText="60kg" />
+
+    <com.jkcq.viewlibrary.BikeItemView
+        android:id="@+id/itemview_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@drawable/shape_layout_grey_bg"
+        android:gravity="center_vertical"
+        app:itemLeftText="@string/birthday"
+        app:itemLeftTextSize="@dimen/sp16"
+        app:itemRightText="1991-01-01" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/btn_commit"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp70"
+            android:background="@drawable/shape_btn_green_bg"
+            android:text="@string/commit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"></TextView>
+    </RelativeLayout>
+</LinearLayout>

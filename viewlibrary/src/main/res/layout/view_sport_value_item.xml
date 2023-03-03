@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/viewlibrary_shape_layout_white_bg"
+    android:paddingLeft="@dimen/dp10">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp7"
+        android:layout_marginBottom="@dimen/dp6"
+        android:fontFamily="sans-serif-medium"
+        android:text="耗时"
+        android:textColor="#6E6E77"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:fontFamily="sans-serif-medium"
+        android:text="0"
+        android:textColor="#2F2F33"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_unitl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_value"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@+id/tv_value"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textColor="#2F2F33"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/iv_view_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/view_icon_bike_hw" />
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp35"
+            android:background="@drawable/friend_shape_layout_corner_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp45"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/sp15"
+                tools:text="nickname" />
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="@dimen/dp196"
+                android:layout_height="@dimen/dp196"
+                android:layout_marginTop="@dimen/dp20"
+                android:src="@mipmap/friend_test_qr_code" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp40"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/friend_open_to_scan"
+                android:textColor="@color/common_gray_color"
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+
+        <com.jkcq.viewlibrary.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/dp70"
+            android:layout_height="@dimen/dp70"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/friend_icon_default_photo"
+            app:civ_circle_background_color="@color/white"
+            app:civ_border_color="#ffd8d8d8"
+            app:civ_border_width="@dimen/dp2" />
+    </FrameLayout>
+
+
+</LinearLayout>

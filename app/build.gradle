@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+apply plugin: 'kotlin-kapt'
+kapt {
+    arguments {
+        // ARouter 配置
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+
+}
+android {
+    compileSdkVersion compile_sdk_version
+    buildToolsVersion build_tools_Version
+    defaultConfig {
+        applicationId "com.jkcq.homebike"
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
+        versionCode version_code
+        versionName version_name
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    greendao {
+        schemaVersion 4
+        daoPackage 'com.jkcq.homebike.gen'
+        targetGenDir 'src/main/java'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(':base')
+    implementation project(':platform')
+    implementation project(':socialmodule')
+    implementation project(':viewlibrary')
+    implementation project(':ble-livedata')
+    implementation project(':ble-common')
+    implementation project(':ble')
+    implementation project(':util')
+    implementation project(':webSocket')
+    implementation project(':lib_http-coroutine')
+
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+//    implementation "androidx.core:core-ktx:$ktx_core_version"
+//    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_version"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
+    api 'com.alibaba:arouter-api:1.5.0'
+    kapt 'com.alibaba:arouter-compiler:1.2.2'
+
+}

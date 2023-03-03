@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ble.setting.BikeDeviceSettingActivity">
+
+    <com.jkcq.viewlibrary.TitleView
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginBottom="@dimen/dp15"
+        app:titleLeftIcon="@drawable/icon_back"
+        app:titletextvalue="Device found" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"></View>
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/connect_describe">
+
+    </ImageView>
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp25"
+        android:text="@string/guide_conn_device_content"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/sp18"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+</LinearLayout>

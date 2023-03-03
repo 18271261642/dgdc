@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.SupplementUserInfoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="37dp"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@drawable/shape_layout_grey_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="@string/pk_pk_name_title"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp16"></TextView>
+
+        <EditText
+            android:id="@+id/et_subname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="@string/pk_hide_enter_name"
+            android:lines="1"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/sp16"></EditText>
+    </LinearLayout>
+
+
+    <com.jkcq.viewlibrary.BikeItemView
+        android:id="@+id/itemview_select_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@drawable/shape_layout_grey_bg"
+        android:gravity="center_vertical"
+        app:itemLeftText="@string/pk_pk_line_title"
+        app:itemLeftTextSize="@dimen/sp16"
+        app:itemRightText="@string/pk_hide_line_select" />
+
+
+    <com.jkcq.viewlibrary.BikeItemView
+        android:id="@+id/itemview_pk_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@drawable/shape_layout_grey_bg"
+        android:gravity="center_vertical"
+        app:itemLeftText="@string/pk_pk_number_title"
+        app:itemLeftTextSize="@dimen/sp16"
+        app:itemRightText="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="37dp"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@drawable/shape_layout_grey_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="@string/pk_pk_pwd_title"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/sp16"></TextView>
+
+        <EditText
+            android:id="@+id/et_pk_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="@string/pk_hide_enter_pwd"
+            android:inputType="numberPassword"
+            android:lines="1"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/sp16"></EditText>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:padding="@dimen/dp20"
+        android:text="@string/pk_nor_pwe_title"
+        android:textColor="@color/common_text_color"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp70"
+            android:background="@drawable/shape_btn_green_bg"
+            android:gravity="center"
+            android:text="@string/pk_create"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"></TextView>
+    </RelativeLayout>
+</LinearLayout>

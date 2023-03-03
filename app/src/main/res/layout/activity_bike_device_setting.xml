@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:fitsSystemWindows="true"
+    tools:context=".ble.setting.BikeDeviceSettingActivity">
+
+    <com.jkcq.viewlibrary.TitleView
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginBottom="@dimen/dp15"
+        app:titleLeftIcon="@drawable/icon_back"
+        app:titleRightIcon="@drawable/icon_device_del"
+        app:titletextvalue="@string/device_setting_title" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bg_bike_device" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_device_setting_state" />
+
+    <TextView
+        android:id="@+id/tv_device_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp3"
+        android:text=""
+        android:textColor="@color/common_rbtn_gray_color"
+        android:textSize="@dimen/sp12" />
+
+    <View
+        android:id="@+id/view_certre"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_certre"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_weight="1"
+            android:background="@drawable/shape_layout_white_bg"
+            android:drawableTop="@drawable/icon_device_info"
+            android:drawablePadding="@dimen/dp3"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp25"
+            android:paddingBottom="@dimen/dp27"
+            android:text="@string/device_setting_info"
+            android:textColor="@color/common_rbtn_gray_color"
+            android:textSize="@dimen/sp10"></TextView>
+
+        <TextView
+            android:id="@+id/tv_ota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_weight="1"
+            android:background="@drawable/shape_layout_white_bg"
+            android:drawableTop="@drawable/icon_device_upgrade"
+            android:drawablePadding="@dimen/dp3"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp25"
+            android:paddingBottom="@dimen/dp27"
+            android:text="@string/device_setting_ota"
+            android:textColor="@color/common_rbtn_gray_color"
+            android:textSize="@dimen/sp10"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_weight="1"
+            android:background="@drawable/shape_layout_white_bg"
+            android:drawableTop="@drawable/icon_play_device"
+            android:drawablePadding="@dimen/dp3"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp25"
+            android:paddingBottom="@dimen/dp27"
+            android:text="@string/devcie_setting_play"
+            android:textColor="@color/common_rbtn_gray_color"
+            android:textSize="@dimen/sp10"></TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_conn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp60"
+        android:background="@drawable/shape_btn_green_bg"
+        android:gravity="center"
+        android:text="@string/go_connect_hr_device"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"></TextView>
+
+</RelativeLayout>

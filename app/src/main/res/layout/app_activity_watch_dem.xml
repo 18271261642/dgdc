@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_hide"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn_white_20_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/dp10"
+
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp10"
+                android:src="@drawable/icon_month_left" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_pre"
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:text="2018-07-08"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/sp17" />
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_date"
+                android:padding="@dimen/dp10"
+
+                android:src="@drawable/icon_month_right" />
+
+
+            <TextView
+                android:id="@+id/tv_back_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/shape_bind_scale_bg"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp3"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp3"
+                android:text="@string/back_today"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp17" />
+        </RelativeLayout>
+
+
+        <com.jkcq.homebike.ride.history.calendar.WatchPopCalendarView
+            android:id="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10" />
+    </LinearLayout>
+
+</LinearLayout>

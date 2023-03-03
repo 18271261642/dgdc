@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7A7A9A"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.jkcq.homebike.ride.course.ZVideoView
+        android:id="@+id/video_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </com.jkcq.homebike.ride.course.ZVideoView>
+
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/shape_btn_green_grey_radio_15_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp10">
+
+
+        <ImageView
+            android:id="@+id/iv_bike_conn_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/dp10"
+            android:src="@mipmap/icon_bike_device" />
+
+        <LinearLayout
+            android:id="@+id/layout_hr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tv_hr_con_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/dp5"
+                android:src="@mipmap/icon_hr_device_discon" />
+
+            <TextView
+                android:id="@+id/tv_hr_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/white"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_bpm_util"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp2"
+                android:text="@string/device_unitl_hr_bpm"
+                android:textColor="@color/white"
+                android:textSize="12sp"></TextView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_mode_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/bike_type_free_bike"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp10"
+            android:drawablePadding="@dimen/dp5"
+            android:gravity="right"
+            android:text="00:00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+
+        <ImageView
+            android:id="@+id/iv_option_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:src="@mipmap/icon_sport_pause" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_hr_device_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginLeft="@dimen/dp80"
+        android:layout_marginTop="@dimen/dp5"
+        android:background="@drawable/shape_btn_green_grey_radio_15_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingTop="@dimen/dp10"
+        android:paddingRight="@dimen/dp20"
+        android:paddingBottom="@dimen/dp10"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/tv_too_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp2"
+            android:text="@string/device_hr_too_high"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_hr_device_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginLeft="@dimen/dp80"
+        android:background="@drawable/bg_no_conn_hr_device"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="20dp">
+
+
+        <TextView
+            android:id="@+id/tv_scan_hr_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="@string/hr_device_discon_tips"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <ImageView
+            android:id="@+id/iv_hr_device_tips_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dp5"
+            android:src="@drawable/icon_hr_device_close" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="114dp"
+        android:layout_height="187dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp20"
+        android:background="@drawable/shape_btn_green_grey_radio_15_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingTop="@dimen/dp8"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/bike_resistance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/iv_resistance_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:padding="@dimen/dp10"
+            android:src="@mipmap/iv_resistance_up" />
+
+        <TextView
+            android:id="@+id/tv_current_resistance"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="50"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp28" />
+
+        <ImageView
+            android:id="@+id/iv_resistance_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp15"
+            android:padding="@dimen/dp10"
+            android:src="@mipmap/iv_resistance_down" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_green_grey_radio_top_29_bg"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp10">
+
+
+            <com.jkcq.viewlibrary.SportValueItemView
+                android:id="@+id/itemview_milage_km"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:itemLeftText="@string/device_unitl_milage_km" />
+
+            <com.jkcq.viewlibrary.SportValueItemView
+                android:id="@+id/itemview_consume_kcal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:itemLeftText="@string/device_unitl_consume_kcal" />
+
+        </LinearLayout>
+
+
+        <com.jkcq.homebike.ride.pk.view.NoiseboardView
+            android:id="@+id/noiseboardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp40"
+            android:layout_marginRight="@dimen/dp10"
+            app:bigSliceCount="4"
+            app:maxValue="200"
+            app:noiseradius="75dp"
+            app:noisescaleTextSize="10sp"
+            app:noiseunitText="DB"
+            app:ribbonWidth="45dp" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_green_grey_radio_top_29_bg"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp10">
+
+            <com.jkcq.viewlibrary.SportValueItemView
+                android:id="@+id/itemview_electric_kj"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:itemLeftText="@string/device_unitl_electric_kj" />
+
+            <com.jkcq.viewlibrary.SportValueItemView
+                android:id="@+id/itemview_hr_bpm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                app:itemLeftText="@string/device_unitl_hr_bpm" />
+
+            <com.jkcq.viewlibrary.SportValueItemView
+                android:id="@+id/itemview_power_w"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:itemLeftText="@string/device_unitl_power_w" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_current_rpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp5"
+        android:text="100"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp22"
+        android:textStyle="bold"></TextView>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_50"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp120" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_option"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_50"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_sport_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_sport_big_pause" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.6" />
+
+        <com.jkcq.homebike.ride.view.AnimSporEndView
+            android:id="@+id/iv_sport_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="gone">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_page2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.viewpager2.widget.ViewPager2>
+
+        <ImageView
+            android:id="@+id/iv_guide_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:src="@mipmap/icon_guide_previous" />
+
+        <TextView
+            android:id="@+id/tv_guide_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="1/4"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/iv_guide_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp10"
+            android:src="@mipmap/icon_guide_next" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_devicelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/black_50"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="295dp"
+            android:background="@drawable/shape_btn_white_20_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_hr_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:drawableRight="@drawable/icon_hr_close"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                android:text="@string/go_connect_hr_device"
+                android:textColor="#2F2F33"
+                android:textSize="@dimen/sp18"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_device_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

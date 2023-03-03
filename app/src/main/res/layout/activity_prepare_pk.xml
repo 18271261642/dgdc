@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ride.sceneriding.SceneRidingListActivity">
+
+    <com.jkcq.homebike.ride.course.ZVideoView
+        android:id="@+id/video_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </com.jkcq.homebike.ride.course.ZVideoView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_50"></View>
+
+    <TextView
+        android:id="@+id/tv_pk_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/nickname"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"></TextView>
+
+    <ImageView
+        android:id="@+id/tv_end_pk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_pk_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/icon_pk_end"
+        android:padding="@dimen/dp10"></ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_pk_name"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_sport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/iv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_pk_start"></ImageView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

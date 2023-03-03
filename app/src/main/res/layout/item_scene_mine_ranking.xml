@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp50"
+    android:background="@drawable/shape_btn_white_50_20_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="0.5"></View>
+
+    <TextView
+        android:id="@+id/tv_ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold"></TextView>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"></View>
+
+    <com.jkcq.viewlibrary.CircleImageView
+        android:id="@+id/iv_mine_head"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/friend_icon_default_photo" />
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:maxWidth="92dp"
+            android:minWidth="92dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12"></TextView>
+
+        <TextView
+            android:id="@+id/tv_mine_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp10"></TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"></View>
+
+    <LinearLayout
+        android:id="@+id/layout_ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10">
+
+        <ImageView
+            android:id="@+id/iv_mine_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_like_nor" />
+
+        <TextView
+            android:id="@+id/tv_mine_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="0.5"></View>
+</LinearLayout>
+

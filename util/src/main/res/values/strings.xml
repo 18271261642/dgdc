@@ -1,0 +1,37 @@
+<resources>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="net_error">The network is not connected. Please connect to the network</string>
+    <string name="dialog_ok">Done</string>
+    <string name="dialog_del">Delete</string>
+    <string name="dialog_go_bind">To connect</string>
+    <string name="loginout_tips">Offline notification</string>
+    <string name="loginout_content">Your account is offline. Please login again</string>
+    <string name="loginout_button_content">OK, go Sign in</string>
+    <string name="download_scene_video_tips">The current live route needs to download the route resource first. Do you want to start downloading the resource?</string>
+    <string name="download_free_video_tips">The current scene needs to download the scene resource first. Do you want to start downloading the resource?</string>
+    <string name="download_course_video_tips">The current course needs to download the course resource first. Do you want to start downloading the resource?</string>
+
+    <string name="scene_line_del_tips">After deleting this resource, you need to download it again if you need to ride the above routes. Delete?</string>
+    <string name="course_line_del_tips">After deleting this resource, you need to download it again if you need to ride the above courses. Delete?</string>
+    <string name="scene_line_del">Delete resource?</string>
+    <string name="scene_line_adapter_tips">The current resource is available for the following routes</string>
+    <string name="course_line_adapter_tips">The current resource is available for the following course</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="base_wait">please wait...</string>
+    <string name="privacy_agreement_title">Update notice</string>
+    <string name="privacy_agreement_titles">Dear user, Fitalent+ revised the 《Fitalent+ Privacy Agreement》 in accordance with the latest laws, regulations and regulatory policies, and pushed this reminder to you. Please read carefully and ensure that you fully understand the relevant terms. \n1. You can learn about the types of personal information we collect from you through the 《Fitalent+ Privacy Agreement》, understand how we collect, use, and store your personal information, and what rights you have. \n2. Without your consent, we will not actively provide or share your information to third parties. \n3. If you agree, please click \"Agree\" to confirm that Fitalent+ will provide you with services in strict accordance with the aforementioned 《Fitalent+ Privacy Agreement》; if you click \"Disagree\", you may not be able to use the services and products provided by Fitalent+. \n\nRead the full version of 《Fitalent+ Privacy Agreement》 to understand all terms</string>
+    <string name="privacy_agreement_content">Read the full version of the 《Privacy agreement》 to learn all the terms and conditions</string>
+    <string name="privacy_agreement_refuse">Disagree</string>
+    <string name="privacy_agreement_ok">Agree</string>
+    <string name="user_agreement_tips">《Service agreement》</string>//用户协议
+    <string name="privacy_agreement_tips">《Privacy agreement》</string>//用户协议
+    <string name="device_state_connecting">Connecting...</string>
+    <string name="package_size">更新包大小: %1$s  M</string>
+    <string name="downloading">Downloading</string>
+    <string name="download_success">Download successful</string>
+    <string name="no_wify_tips"> The current network is in non-wifi mode, are you sure to download the resource?</string>
+    <string name="pk_hide_enter_pwd">Enter a four-digit password</string>
+    <string name="pk_join">Join</string>
+    <string name="pk_starting">PK has started and cannot be joined</string>
+</resources>
